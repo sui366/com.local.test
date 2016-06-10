@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="  
+http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+http://www.springframework.org/schema/aop
+http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+ 
+    <!-- 自动扫描注解的bean -->
+    <context:component-scan base-package="com.test.cheduler" />
+ 
+    <!-- 引入properties配置文件 --> 
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+               <value>classpath:properties/*.properties</value>
+                <!--要是有多个配置文件，只需在这里继续添加即可 -->
+            </list>
+        </property>
+    </bean>
+    
+	<bean id="pingTimerTask" class="com.jumore.finance.scheduler.task.proj.ProjCheckTimerTask">
+		<property name="start_or_stop" value="true" />
+		<property name="mobileMap">
+			<map>
+				<entry key="15558091282" value="zengdeqing@maisulang.com" />
+			</map>
+		</property>
+	</bean>
+    
+    
+	<!-- 定时器注册 -->
+	<bean id="jobTask" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
+		<property name="targetObject"><ref bean="pingTimerTask" /></property>
+		<property name="targetMethod" value="execute" />
+    </bean>    
+    
+    <!-- 定时器 时间设置 --> 
+	<bean id="jobTrigger" class="org.springframework.scheduling.quartz.CronTriggerBean">
+		<property name="jobDetail"><ref bean="jobTask"/></property>
+		<property name="cronExpression"><value>0 55 17 * * ?</value></property>
+    </bean>
+    
+    
+    <!-- 定时任务工厂注册 -->  
+	<bean id="blackListScheduler" class="org.springframework.scheduling.quartz.SchedulerFactoryBean" autowire="no">
+		<property name="triggers">
+			<list>
+				<ref bean="jobTrigger"/>
+			</list>
+		</property>
+		<property name="startupDelay">
+			<value>1</value>
+		</property>
+		<property name="schedulerName">
+			<value>eflowEngine</value>
+		</property>
+		<property name="autoStartup">
+			<value>true</value>
+		</property>
+		<property name="applicationContextSchedulerContextKey">
+			<value>applicationContext</value>
+		</property>
+	</bean>
+    
+ 
+    <!-- aop配置切点跟通知 -->
+    <bean id="methodCachePointCut" class="org.springframework.aop.support.RegexpMethodPointcutAdvisor">
+        <property name="pattern" value=".*ServiceImpl.*getTimestamp"/>
+    </bean>
+    
+    <bean class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator"/>
+ 
+</beans>

@@ -1,0 +1,9 @@
+<component-set>
+	<components>
+		<component>
+			<role>demo.plexus-demos.Cheese</role>
+			<role-hint>parmesan</role-hint>
+			<implementation>demo.plexus-demos.ParmesanCheese</implementation>
+		</component>
+	</components>
+</component-set>
