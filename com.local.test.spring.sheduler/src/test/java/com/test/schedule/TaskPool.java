@@ -18,7 +18,7 @@ public class TaskPool {
 			@Override
 			public Thread newThread(Runnable r) {
 				Thread thread = new Thread(r);
-				thread.setName("redis读写线程");
+				thread.setName("redis读写线程测试");
 				return thread;
 			}
 		});
