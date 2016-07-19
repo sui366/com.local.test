@@ -10,6 +10,10 @@
 	<packaging>jar</packaging>
 	<name>local-test-common</name>
 
+	<properties>
+		<project></project>
+	</properties>
+
 	<dependencies>
 
 		<dependency>
@@ -41,6 +45,54 @@
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.5</version>
+		</dependency>
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.lucene</groupId> -->
+		<!-- <artifactId>lucene-core</artifactId> -->
+		<!-- <version>${lucene.version}</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.lucene</groupId> -->
+		<!-- <artifactId>lucene-analyzers-common</artifactId> -->
+		<!-- <version>${lucene.version}</version> -->
+		<!-- </dependency> -->
+
+		<!-- <dependency> -->
+		<!-- <groupId>org.apache.lucene</groupId> -->
+		<!-- <artifactId>lucene-queryparser</artifactId> -->
+		<!-- <version>${lucene.version}</version> -->
+		<!-- </dependency> -->
+
+		<dependency>
+			<groupId>org.elasticsearch</groupId>
+			<artifactId>elasticsearch</artifactId>
+			<version>2.3.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.elasticsearch.test</groupId>
+			<artifactId>framework</artifactId>
+			<version>2.3.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-math3</artifactId>
+			<version>3.6</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>commons-beanutils</groupId>
+			<artifactId>commons-beanutils</artifactId>
+			<version>1.9.2</version>
 		</dependency>
 
 	</dependencies>
