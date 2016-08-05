@@ -120,12 +120,12 @@ public class ElasticSearchHandler {
 	/**
 	 * 分页搜索
 	 */
-	public List<Object> searcher(QueryBuilder queryBuilder, String indexname, String type, Class<?> paramClass, int from, int pageSize) throws IllegalAccessException, InstantiationException {
+	public List<Object> searcher(QueryBuilder queryBuilder, String indexname, String type, Class<?> paramClass, int from, int pageSize, String order, SortOrder sort) throws IllegalAccessException, InstantiationException {
 
 		List<Object> list = new ArrayList<Object>();
-		SearchResponse searchResponse = client.prepareSearch(indexname).setTypes(type).setFrom(from).setSize(pageSize).setQuery(queryBuilder).addSort("id", SortOrder.DESC).execute().actionGet();
+		SearchResponse searchResponse = client.prepareSearch(indexname).setTypes(type).setFrom(from).setSize(pageSize).setQuery(queryBuilder).addSort(order, sort).execute().actionGet();
 		SearchHits hits = searchResponse.getHits();
-		System.out.println("查询到记录数=" + hits.getTotalHits());
+		System.out.println("分页查询到记录数=" + hits.getTotalHits());
 		SearchHit[] searchHists = hits.getHits();
 		if (searchHists.length > 0) {
 			for (SearchHit hit : searchHists) {
@@ -176,8 +176,10 @@ public class ElasticSearchHandler {
 	 * 删除索引
 	 */
 	public void deleteIndex(String index, String type, QueryBuilder queryBuilder) {
-		List<Object> list = new ArrayList<Object>();
 		SearchResponse searchResponse = client.prepareSearch(index).setTypes(type).setQuery(queryBuilder).execute().actionGet();
+		
+//		getClient().prepareDeleteByQuery(Constants.ES_INDEX).setTypes(Constants.ES_DATAINFO_TYPE).setQuery(QueryBuilders.termQuery("url", document.getUrl())).execute().actionGet();
+
 		SearchHits hits = searchResponse.getHits();
 		SearchHit[] searchHists = hits.getHits();
 		if (searchHists.length > 0) {
@@ -186,31 +188,14 @@ public class ElasticSearchHandler {
 			}
 		}
 	}
-
-	public static void main(String[] args) {
-		ElasticSearchHandler esHandler = new ElasticSearchHandler();
-		List<String> jsondata = DataFactory.getInitJsonData();
-		String indexname = "indexdemo";
-		String type = "typedemo";
-
-		// 添加
-		// esHandler.createIndexResponse(indexname, type, jsondata);
-
-		// 查询条件
-		QueryBuilder queryBuilder = QueryBuilders.matchQuery("name", "颗粒");
-
-		QueryBuilders.rangeQuery("attr1").gt("value1");// gt lt eq gte lte;
-		// FilterBuilders.orFilter(FilterBuilders.termFilter("attr1",
-		// "value1"),FilterBuilders.termFilter("attr2", "value2"));
-		// FilterBuilders.andFilter(FilterBuilders.termFilter("attr1",
-		// "value1"),FilterBuilders.termFilter("attr2", "value2"));
-
-		// 删除
-		// esHandler.deleteIndex(indexname, type, queryBuilder);
-
+	
+	/**
+	 * 查询并展示数据
+	 */
+	private void queryData(ElasticSearchHandler esHandler, String indexname, String type, QueryBuilder queryBuilder) {
 		List<Object> result = null;
 		try {
-			result = esHandler.searcher(queryBuilder, indexname, type, Medicine.class, 2, 5);
+			result = esHandler.searcher(queryBuilder, indexname, type, Medicine.class, 2, 5, "id", SortOrder.DESC);
 		} catch (IllegalAccessException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -223,4 +208,33 @@ public class ElasticSearchHandler {
 			System.out.println("(" + medicine.getId() + ")药品名称:" + medicine.getName() + "\t\t" + medicine.getFunction());
 		}
 	}
+
+	public static void main(String[] args) {
+		ElasticSearchHandler esHandler = new ElasticSearchHandler();
+		List<String> jsondata = DataFactory.getInitJsonData();
+		String indexname = "indexdemo";
+		String type = "typedemo";
+
+		// 查询条件
+		QueryBuilder queryBuilder = QueryBuilders.termQuery("name", "颗");
+		
+		// 添加
+		 esHandler.createIndexResponse(indexname, type, jsondata);
+
+
+//		QueryBuilders.rangeQuery("attr1").gt("value1");// gt lt eq gte lte;
+		// FilterBuilders.orFilter(FilterBuilders.termFilter("attr1",
+		// "value1"),FilterBuilders.termFilter("attr2", "value2"));
+		// FilterBuilders.andFilter(FilterBuilders.termFilter("attr1",
+		// "value1"),FilterBuilders.termFilter("attr2", "value2"));
+
+		
+		// 删除
+//		 esHandler.deleteIndex(indexname, type, queryBuilder);
+
+		 //查询
+		 esHandler.queryData(esHandler, indexname, type, queryBuilder);
+	}
+
+	
 }

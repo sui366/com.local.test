@@ -37,6 +37,7 @@
 		<module>com.local.test.service</module>
 		<module>com.local.test.spring.redis</module>
 		<module>com.local.test.spring.sheduler</module>
+		<module>com.local.test.spring.elasticsearch</module>
 	</modules>
 
 	<build>

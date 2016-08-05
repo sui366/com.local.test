@@ -42,7 +42,6 @@ public class JsonUtil {
 					}
 				}
 			}
-			
 			jsonBuild.endObject();
 			
 			jsonData = jsonBuild.string();
