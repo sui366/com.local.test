@@ -11,6 +11,7 @@ import org.springframework.data.elasticsearch.core.ElasticsearchTemplate;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.AbstractJUnit4SpringContextTests;
 
+import spring.data.elasticsearch.repositories.Test2Repository;
 import spring.data.elasticsearch.repositories.UserRepository;
 
 @ContextConfiguration(locations = "classpath:spring.xml")
@@ -20,6 +21,8 @@ public abstract class BaseTest extends AbstractJUnit4SpringContextTests {
 	protected ElasticsearchTemplate elasticsearchTemplate;
 	@Autowired
 	protected UserRepository userRepository;
+	@Autowired
+	protected Test2Repository test2Repository;
 
 	protected String getId() {
 		return UUID.randomUUID().toString().replaceAll("-", "");
