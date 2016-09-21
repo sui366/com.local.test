@@ -25,5 +25,13 @@ public interface Test2Repository extends ElasticsearchRepository<Test2, String> 
 	 */
 	Page<Test2> findBycolumn1Like(String column1, Pageable pageable);
 	
-	
+//	boolean exists(String column1);
+//	
+//	long count(Predicate predicate);
 }
+
+
+
+
+
+

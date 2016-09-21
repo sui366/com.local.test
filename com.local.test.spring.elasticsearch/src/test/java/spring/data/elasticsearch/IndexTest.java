@@ -59,9 +59,9 @@ public class IndexTest extends BaseTest {
 		
 		col1List = test2Repository.findByColumn1Like(column1);
 		System.out.println(col1List.size());
-		
-		
 	}
+	
+	
 	@Test
 	public void test2Page(){
 		
@@ -74,11 +74,20 @@ public class IndexTest extends BaseTest {
 		}
 	}
 	
-//	@Test
-//	public void test2Builder(){
+	@Test
+	public void test2Count(){
+//		String column1 = "tuo";
+//		Predicate predicate = Test2.; 
+//		test2Repository.count(column1)
+//		System.out.println(test2Repository.);
+//		
+	}
+	
+	@Test
+	public void test2Builder(){
 //		XContentBuilder builder = XContentFactory.jsonBuilder();
 //		builder.field("column1", "tuo");
 //		QueryBuilder query = new
-//	}
+	}
 	
 }
