@@ -110,17 +110,16 @@
 			<artifactId>com.shunwang.back.permission.sdk</artifactId>
 			<version>1.1.0-SNAPSHOT</version>
 		</dependency>
-		<dependency>
-			<groupId>com.shunwang</groupId>
-			<artifactId>com.shunwang.back.oauth2.sdk</artifactId>
-			<version>1.1.0-SNAPSHOT</version>
-		</dependency>
-		<dependency>
-			<groupId>com.shunwang</groupId>
-			<artifactId>com.shunwang.back.oauth2.sdk</artifactId>
-			<version>1.1.0-SNAPSHOT</version>
-		</dependency>
 		
+		<dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>javax.servlet-api</artifactId>
+           <scope>provided</scope>
+       </dependency>
+       <dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>jstl</artifactId>
+       </dependency>
 		
 	</dependencies>
 	

@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.shunwang.permission.core.common.cache.SystemCache;
 
 
-@WebFilter(filterName="PermissionValidateFilter",urlPatterns={"*.do", "*.jsp", "*.action", "*.shtml"})
+@WebFilter(filterName="PermissionValidateFilter",urlPatterns={"*.do", "*.action", "*.shtml"})
 public class PermissionValidateFilter extends com.shunwang.back.filter.PermissionValidateFilter {
 
 	private static final String ERROR_JSP = "error.jsp";
