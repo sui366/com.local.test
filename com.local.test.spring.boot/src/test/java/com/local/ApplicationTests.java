@@ -1,3 +1,4 @@
+package com.local;
 //package com.didispace;
 //
 //import static org.hamcrest.Matchers.equalTo;

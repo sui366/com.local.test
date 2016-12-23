@@ -1,4 +1,4 @@
-package com.didispace;
+package com.local;
 
 import java.io.File;
 import java.net.MalformedURLException;
