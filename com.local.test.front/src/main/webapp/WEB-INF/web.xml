@@ -5,15 +5,57 @@
 	id="ispMobile" version="2.5">
 
 
+	<!-- dwr begin -->
+	<listener>
+		<listener-class>org.directwebremoting.servlet.DwrListener</listener-class>
+	</listener>
+	<servlet>
+        <servlet-name>dwr-invoker</servlet-name>
+        <servlet-class>
+            org.directwebremoting.servlet.DwrServlet
+        </servlet-class>
+        <init-param>
+            <param-name>crossDomainSessionSecurity</param-name>
+               <param-value>false</param-value>
+            </init-param>
+        <init-param>
+          <param-name>allowScriptTagRemoting</param-name>
+          <param-value>true</param-value>
+        </init-param>
+        <init-param>
+          <param-name>classes</param-name>
+          <param-value>java.lang.Object</param-value>
+        </init-param>
+        <init-param>
+            <param-name>activeReverseAjaxEnabled</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+           <param-name>initApplicationScopeCreatorsAtStartup</param-name>
+           <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>maxWaitAfterWrite</param-name>
+            <param-value>3000</param-value>
+        </init-param>
+        <init-param>
+            <param-name>debug</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>WARN</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet-mapping>
+	  <servlet-name>dwr-invoker</servlet-name>
+	  <url-pattern>/dwr/*</url-pattern>
+	</servlet-mapping>
+	<!-- dwr end -->
+
 	<welcome-file-list>
-		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
-
-	<error-page>
-		<error-code>404</error-code>
-		<location>/404.jsp</location>
-	</error-page>
-
-	
 
 </web-app>

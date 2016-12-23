@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.local.test.dao.MonitorObjectsDao" >
+  <resultMap id="BaseResultMap" type="com.local.test.pojo.MonitorObjects" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <id column="product_type" property="productType" jdbcType="INTEGER" />
+    <id column="proc_type" property="procType" jdbcType="INTEGER" />
+    <id column="addr" property="addr" jdbcType="VARCHAR" />
+    <id column="is_open" property="isOpen" jdbcType="INTEGER" />
+    <id column="update_user" property="updateUser" jdbcType="VARCHAR" />
+    <id column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <id column="show_name" property="showName" jdbcType="VARCHAR" />
+    <id column="version" property="version" jdbcType="VARCHAR" />
+    <id column="isp_type" property="ispType" jdbcType="INTEGER" />
+    </resultMap>
+    
+ <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+	select
+      t.id,
+      t.product_type,
+      t.proc_type,
+      t.addr,
+      t.is_open,
+      t.update_user,
+      t.update_time,
+      t.isp_type
+    from monitor_objects t 
+	  where t.id = #{id,jdbcType=INTEGER}
+  </select>  
+  
+</mapper>
+

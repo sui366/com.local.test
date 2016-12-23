@@ -1,11 +1,12 @@
 package com.test.owner;
 
 import org.aeonbits.owner.Config.Sources;
+import org.aeonbits.owner.Mutable;
 import org.aeonbits.owner.Reloadable;
 
 //@HotReload(value=10, unit = TimeUnit.SECONDS)
 @Sources({ "classpath:ServerConfig.properties" })
-public interface ServerConfig extends Reloadable  {
+public interface ServerConfig extends Mutable, Reloadable {
 	@Key("server.http.port")
 	int port();
 
@@ -15,4 +16,5 @@ public interface ServerConfig extends Reloadable  {
 	@Key("server.max.threads")
 	@DefaultValue("42")
 	int maxThreads();
+	
 }

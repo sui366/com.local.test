@@ -10,7 +10,7 @@ public class RedisTestServiceTest extends SpringTestCase {
     private RedisTestService redisTestService;
  
     @Test 
-    public void getTimestampTest() throws InterruptedException{ 
+    public void getTimestampTest() throws InterruptedException{  
         System.out.println("第一次调用：" + redisTestService.getTimestamp("param"));
         Thread.sleep(2000);
         System.out.println("2秒之后调用：" + redisTestService.getTimestamp("param"));

@@ -1,0 +1,931 @@
+2016-12-23 13:13:42,498  INFO WebLogAspect:40 ---- URL : http://localhost:8080/monitorObjects/findMonitorObjects
+2016-12-23 13:13:42,501  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 13:13:42,502  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 13:13:42,505  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.MonitorObjectsController.findMonitorObjects
+2016-12-23 13:13:42,506  INFO WebLogAspect:44 ---- ARGS : []
+2016-12-23 13:13:42,604  INFO WebLogAspect:51 ---- RESPONSE : ModelAndView: reference to view with name 'monitor-objects'; model is {data=com.local.test.pojo.MonitorObjects@3880efa5}
+2016-12-23 13:13:42,605  INFO WebLogAspect:52 ---- SPEND TIME : 108
+2016-12-23 15:53:36,433  INFO WebLogAspect:40 ---- URL : http://localhost:8080/
+2016-12-23 15:53:36,437  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 15:53:36,438  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 15:53:36,440  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.HelloController.index
+2016-12-23 15:53:36,441  INFO WebLogAspect:44 ---- ARGS : [{}]
+2016-12-23 15:53:36,449  INFO WebLogAspect:51 ---- RESPONSE : index
+2016-12-23 15:53:36,449  INFO WebLogAspect:52 ---- SPEND TIME : 17
+2016-12-23 15:53:40,399  INFO WebLogAspect:40 ---- URL : http://localhost:8080/
+2016-12-23 15:53:40,400  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 15:53:40,401  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 15:53:40,401  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.HelloController.index
+2016-12-23 15:53:40,402  INFO WebLogAspect:44 ---- ARGS : [{}]
+2016-12-23 15:53:40,403  INFO WebLogAspect:51 ---- RESPONSE : index
+2016-12-23 15:53:40,403  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 15:54:01,472  INFO WebLogAspect:40 ---- URL : http://localhost:8080/monitorObjects/findMonitorObjects
+2016-12-23 15:54:01,472  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 15:54:01,473  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 15:54:01,474  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.MonitorObjectsController.findMonitorObjects
+2016-12-23 15:54:01,474  INFO WebLogAspect:44 ---- ARGS : []
+2016-12-23 15:54:01,560  INFO WebLogAspect:51 ---- RESPONSE : ModelAndView: reference to view with name 'monitor-objects'; model is {data=com.local.test.pojo.MonitorObjects@6df5356a}
+2016-12-23 15:54:01,561  INFO WebLogAspect:52 ---- SPEND TIME : 89
+2016-12-23 15:54:43,304  INFO WebLogAspect:40 ---- URL : http://localhost:8080/monitorObjects/findMonitorObjects
+2016-12-23 15:54:43,305  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 15:54:43,305  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 15:54:43,305  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.MonitorObjectsController.findMonitorObjects
+2016-12-23 15:54:43,306  INFO WebLogAspect:44 ---- ARGS : []
+2016-12-23 15:54:43,315  INFO WebLogAspect:51 ---- RESPONSE : ModelAndView: reference to view with name 'monitor-objects'; model is {data=com.local.test.pojo.MonitorObjects@9676bf1}
+2016-12-23 15:54:43,315  INFO WebLogAspect:52 ---- SPEND TIME : 11
+2016-12-23 15:55:14,585  INFO WebLogAspect:40 ---- URL : http://localhost:8080/monitorObjects/findMonitorObjects
+2016-12-23 15:55:14,588  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 15:55:14,589  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 15:55:14,592  INFO WebLogAspect:43 ---- CLASS_METHOD : com.local.test.web.MonitorObjectsController.findMonitorObjects
+2016-12-23 15:55:14,592  INFO WebLogAspect:44 ---- ARGS : []
+2016-12-23 15:55:14,689  INFO WebLogAspect:51 ---- RESPONSE : ModelAndView: reference to view with name 'monitor-objects'; model is {data=com.local.test.pojo.MonitorObjects@54f00496}
+2016-12-23 15:55:14,690  INFO WebLogAspect:52 ---- SPEND TIME : 105
+2016-12-23 17:36:56,388  INFO WebLogAspect:40 ---- URL : http://localhost:8080/AsyncDemo.do
+2016-12-23 17:36:56,396  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:36:56,398  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:36:56,401  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:36:56,401  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:00,618  INFO WebLogAspect:40 ---- URL : http://localhost:8080/AsyncDemo.do
+2016-12-23 17:37:00,619  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:00,622  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:00,623  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.http.HttpSessionListener.sessionCreated
+2016-12-23 17:37:00,627  INFO WebLogAspect:44 ---- ARGS : [javax.servlet.http.HttpSessionEvent[source=org.apache.catalina.session.StandardSessionFacade@41fdbf2c]]
+2016-12-23 17:37:00,627  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:00,628  INFO WebLogAspect:52 ---- SPEND TIME : 10
+2016-12-23 17:37:00,637  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:00,637  INFO WebLogAspect:52 ---- SPEND TIME : 19
+2016-12-23 17:37:00,657  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:00,659  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:00,660  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:00,660  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:00,661  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,785  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,790  INFO WebLogAspect:52 ---- SPEND TIME : 3133
+2016-12-23 17:37:03,814  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,815  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,816  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,816  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,816  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,817  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,817  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:03,824  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,825  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,825  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,825  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,826  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,826  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,827  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:03,841  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,842  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,843  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,843  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,843  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,844  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,847  INFO WebLogAspect:52 ---- SPEND TIME : 6
+2016-12-23 17:37:03,853  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,854  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,854  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,854  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,856  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,856  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,857  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:03,861  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,862  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,863  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,863  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,864  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,865  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,865  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:03,869  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,869  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,871  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,872  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,872  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,874  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,874  INFO WebLogAspect:52 ---- SPEND TIME : 5
+2016-12-23 17:37:03,886  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,886  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,886  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,886  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,886  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,887  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,887  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:03,897  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,900  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,901  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,902  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,903  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,904  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,905  INFO WebLogAspect:52 ---- SPEND TIME : 8
+2016-12-23 17:37:03,910  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,910  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,911  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,911  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,911  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,914  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,914  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:03,919  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,920  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,920  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,920  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,921  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,922  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,922  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:03,926  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,927  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,927  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,927  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,928  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,930  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,930  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:03,936  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,936  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,937  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,937  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,937  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,938  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,938  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:03,942  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,943  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,943  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,943  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,944  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,945  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,946  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:03,951  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,952  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,952  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,952  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,953  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,954  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,955  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:03,958  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,959  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,959  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,959  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,960  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,960  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,961  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:03,965  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,965  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,965  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,966  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,966  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,967  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,967  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:03,970  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,971  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,971  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,971  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,971  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,972  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,972  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:03,976  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,976  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,976  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,977  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,977  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,978  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,978  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:03,985  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:03,986  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:03,986  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:03,986  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:03,986  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:03,988  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:03,988  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,065  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,065  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,066  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,066  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,066  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,067  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,067  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,072  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,072  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,073  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,073  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,073  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,074  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,075  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,086  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,087  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,087  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,087  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,088  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,089  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,089  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,093  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,094  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,094  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,094  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,095  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,098  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,101  INFO WebLogAspect:52 ---- SPEND TIME : 8
+2016-12-23 17:37:04,107  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,108  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,108  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,108  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,108  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,109  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,109  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,115  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,115  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,115  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,116  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,116  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,116  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,117  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,121  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,121  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,121  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,122  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,122  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,123  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,123  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,128  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,129  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,130  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,131  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,131  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,132  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,132  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:04,136  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,136  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,136  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,136  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,137  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,137  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,137  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:04,142  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,142  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,143  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,143  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,143  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,144  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,144  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,149  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,150  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,150  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,151  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,151  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,152  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,152  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,156  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,156  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,157  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,157  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,157  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,158  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,158  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,161  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,162  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,162  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,163  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,163  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,164  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,164  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,167  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,167  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,168  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,168  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,168  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,169  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,170  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:04,174  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,175  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,175  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,175  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,175  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,176  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,176  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,180  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,180  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,181  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,181  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,181  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,182  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,182  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,187  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,187  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,187  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,188  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,188  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,189  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,189  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,193  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,193  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,193  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,193  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,194  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,194  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,194  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:04,200  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,200  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,200  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,201  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,201  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,202  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,202  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,205  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,205  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,205  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,206  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,206  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,206  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,207  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:04,211  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:04,211  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:04,212  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:04,212  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:04,213  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:04,213  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:04,213  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,230  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,231  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,232  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,232  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,232  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,238  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,238  INFO WebLogAspect:52 ---- SPEND TIME : 8
+2016-12-23 17:37:09,255  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,256  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,256  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,256  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,256  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,257  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,257  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,276  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,276  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,276  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,276  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,276  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,277  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,277  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:09,290  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,290  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,290  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,290  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,290  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,292  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,297  INFO WebLogAspect:52 ---- SPEND TIME : 7
+2016-12-23 17:37:09,306  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,307  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,309  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,309  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,309  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,310  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,310  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:09,317  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,318  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,318  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,318  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,318  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,319  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,319  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:09,324  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,324  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,324  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,325  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,325  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,325  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,325  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:09,333  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,334  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,334  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,334  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,334  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,335  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,335  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,338  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,339  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,339  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,339  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,340  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,340  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,341  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:09,344  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,345  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,346  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,346  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,346  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,349  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,350  INFO WebLogAspect:52 ---- SPEND TIME : 6
+2016-12-23 17:37:09,353  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,354  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,354  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,354  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,354  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,354  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,355  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,359  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,359  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,360  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,360  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,360  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,360  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,360  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:09,369  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,369  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,370  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,370  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,370  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,370  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,370  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:09,376  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,377  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,377  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,377  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,380  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,380  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,381  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:09,386  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,387  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,387  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,387  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,387  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,388  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,388  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,391  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,391  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,392  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,392  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,392  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,393  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,394  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:09,400  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,400  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,400  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,401  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,401  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,401  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,401  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:09,410  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,410  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,410  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,410  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,411  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,414  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,414  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:37:09,417  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,418  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,418  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,418  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,418  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,419  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,419  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,423  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,423  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,424  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,424  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,424  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,424  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,425  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:09,428  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:09,428  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:09,428  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:09,429  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:09,429  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:09,429  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:09,430  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:39,452  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,453  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,453  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,454  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,454  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,471  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,471  INFO WebLogAspect:52 ---- SPEND TIME : 19
+2016-12-23 17:37:39,482  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,483  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,483  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,483  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,484  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,484  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,484  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,490  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,490  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,491  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,491  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,491  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,492  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,492  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,498  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,498  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,498  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,498  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,499  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,500  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,500  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,510  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,511  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,511  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,511  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,511  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,512  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,512  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,515  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,516  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,516  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,516  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,516  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,517  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,518  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:39,522  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,523  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,523  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,523  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,523  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,524  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,524  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,527  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,527  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,527  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,527  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,527  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,528  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,528  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,532  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,532  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,533  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,533  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,533  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,535  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,535  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:37:39,540  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,540  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,540  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,540  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,540  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,541  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,541  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,544  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,545  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,545  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,545  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,545  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,546  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,546  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,549  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,549  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,549  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,550  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,551  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,551  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,551  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,557  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,557  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,557  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,557  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,557  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,558  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,558  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,563  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,564  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,564  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,564  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,564  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,564  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,564  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,569  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,570  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,570  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,570  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,570  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,571  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,571  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,574  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,575  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,575  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,575  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,575  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,575  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,575  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,578  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,578  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,578  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,579  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,579  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,579  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,580  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,583  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,583  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,584  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,584  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,584  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,585  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,585  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,588  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,588  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,588  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,588  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,588  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,589  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,589  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:37:39,592  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,592  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,592  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,593  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,593  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,594  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,594  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:37:39,597  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:37:39,598  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:37:39,598  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:37:39,598  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:37:39,598  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:37:39,599  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:37:39,599  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,615  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,616  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,617  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,617  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,618  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,619  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,619  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:38:39,636  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,637  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,637  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,638  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,638  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,638  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,638  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,645  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,646  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,646  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,646  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,647  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,647  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,648  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:38:39,653  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,653  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,653  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,654  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,654  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,655  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,655  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,661  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,662  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,662  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,662  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,662  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,663  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,663  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,668  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,669  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,670  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,670  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,670  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,670  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,670  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,674  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,675  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,675  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,675  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,675  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,676  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,676  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,679  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,679  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,679  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,679  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,679  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,680  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,680  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,683  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,683  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,684  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,684  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,684  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,685  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,685  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,688  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,689  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,689  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,689  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,689  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,690  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,690  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,693  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,693  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,694  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,694  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,694  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,695  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,695  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,699  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,699  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,699  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,700  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,700  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,700  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,700  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,705  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,706  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,706  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,706  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,706  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,708  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,708  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:38:39,711  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,712  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,712  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,712  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,712  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,713  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,713  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,718  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,718  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,718  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,719  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,719  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,719  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,719  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,724  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,724  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,724  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,725  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,725  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,725  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,726  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,731  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,731  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,731  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,732  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,732  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,732  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,732  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,736  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,736  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,736  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,736  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,737  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,737  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,737  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,741  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,741  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,741  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,741  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,742  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,742  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,742  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:38:39,745  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,745  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,746  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,746  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,746  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,747  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,747  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:38:39,749  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:38:39,750  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:38:39,750  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:38:39,750  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:38:39,750  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:38:39,751  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:38:39,751  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,781  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,781  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,782  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,783  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,783  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,784  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,785  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:43:39,796  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,797  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,797  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,798  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,798  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,798  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,798  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,808  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,808  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,809  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,810  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,811  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,812  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,812  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:43:39,823  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,823  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,823  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,824  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,824  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,824  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,825  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,833  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,833  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,834  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,834  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,834  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,835  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,835  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,839  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,840  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,840  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,840  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,840  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,841  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,841  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,845  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,845  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,845  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,845  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,845  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,846  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,847  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,855  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,856  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,856  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,856  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,857  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,857  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,857  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,868  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,869  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,869  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,869  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,870  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,871  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,872  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:43:39,880  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,880  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,880  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,881  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,881  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,881  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,881  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:43:39,885  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,885  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,886  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,886  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,886  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,887  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,887  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,891  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,891  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,891  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,891  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,892  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,892  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,892  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:43:39,896  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,896  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,896  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,897  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,897  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,898  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,898  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,901  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,901  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,902  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,903  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,903  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,904  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,904  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:43:39,907  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,907  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,907  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,907  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,908  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,908  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,908  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:43:39,912  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,912  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,913  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,914  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,914  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,918  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,919  INFO WebLogAspect:52 ---- SPEND TIME : 7
+2016-12-23 17:43:39,922  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,922  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,922  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,922  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,923  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,923  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,923  INFO WebLogAspect:52 ---- SPEND TIME : 1
+2016-12-23 17:43:39,927  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,927  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,928  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,928  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,930  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,931  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,931  INFO WebLogAspect:52 ---- SPEND TIME : 4
+2016-12-23 17:43:39,934  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,935  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,935  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,935  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,936  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,937  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,937  INFO WebLogAspect:52 ---- SPEND TIME : 3
+2016-12-23 17:43:39,940  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,941  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,941  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,941  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,941  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,942  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,942  INFO WebLogAspect:52 ---- SPEND TIME : 2
+2016-12-23 17:43:39,945  INFO WebLogAspect:40 ---- URL : http://localhost:8080/index.jsp
+2016-12-23 17:43:39,945  INFO WebLogAspect:41 ---- HTTP_METHOD : GET
+2016-12-23 17:43:39,946  INFO WebLogAspect:42 ---- IP : 0:0:0:0:0:0:0:1
+2016-12-23 17:43:39,946  INFO WebLogAspect:43 ---- CLASS_METHOD : javax.servlet.Filter.doFilter
+2016-12-23 17:43:39,946  INFO WebLogAspect:44 ---- ARGS : [org.apache.catalina.connector.RequestFacade@12776657, org.apache.catalina.connector.ResponseFacade@2bf0695a, org.apache.catalina.core.ApplicationFilterChain@b2871db]
+2016-12-23 17:43:39,947  INFO WebLogAspect:51 ---- RESPONSE : null
+2016-12-23 17:43:39,947  INFO WebLogAspect:52 ---- SPEND TIME : 2
