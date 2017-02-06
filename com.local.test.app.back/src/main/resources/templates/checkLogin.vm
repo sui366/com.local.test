@@ -1,0 +1,11 @@
+
+<script>
+	
+    var currentUserName = $("#currentUserName").val();
+    var authPath = $("#authPath").val();
+    if((currentUserName == null || currentUserName == "") && (authPath != null && authPath != "")){
+    	top.location.href = authPath;
+    }
+    
+</script>
+

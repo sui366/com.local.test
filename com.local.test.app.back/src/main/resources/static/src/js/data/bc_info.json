@@ -1,0 +1,22 @@
+{
+    "data": {
+        "ocNum": 3532521,
+        "ocNumYesterday": 3878100,
+        "ocBarNum": 75096,
+        "ocBarPct": 0.9120,
+        "ocPerNum": 2.69,
+        "ocPerPct": 0.8787,
+        "ccNum": 18888,
+        "ccNumYesterday": 19000,
+        "ccBarNum": 8377,
+        "ccBarPct": 0.1485,
+        "ccPerNum": 1.39,
+        "ccPerPct": 0.0048,
+        "bcNum": 18888,
+        "bcNumYesterday": 17000,
+        "bcBarNum": 10200,
+        "bcBarPct": 0.4531,
+        "bcPerNum": 1.51,
+        "bcPerPct": 0.0531
+    }
+}

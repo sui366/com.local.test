@@ -1,0 +1,17 @@
+{
+    "data": {
+        "onlineBarNum": 75096,
+        "downloadInfoDetails": [
+            { "downloadTime": "12-13 16:00", "version": 23035, "downloadBarNum": 23350, "destBarNum": 75096 },
+            { "downloadTime": "12-13 11:00", "version": 23034, "downloadBarNum": 32350, "destBarNum": 75096 },
+            { "downloadTime": "12-13 10:00", "version": 23033, "downloadBarNum": 42360, "destBarNum": 75096 },
+            { "downloadTime": "12-13 09:00", "version": 23032, "downloadBarNum": 43754, "destBarNum": 75096 },
+            { "downloadTime": "12-12 16:00", "version": 23031, "downloadBarNum": 63358, "destBarNum": 75096 },
+            { "downloadTime": "12-12 11:00", "version": 23030, "downloadBarNum": 75096, "destBarNum": 75096 },
+            { "downloadTime": "12-11 11:00", "version": 23029, "downloadBarNum": 75096, "destBarNum": 75096 },
+            { "downloadTime": "12-11 11:00", "version": 23028, "downloadBarNum": 75096, "destBarNum": 75096 },
+            { "downloadTime": "12-11 11:00", "version": 23027, "downloadBarNum": 75096, "destBarNum": 75096 },
+            { "downloadTime": "12-10 11:00", "version": 23026, "downloadBarNum": 75096, "destBarNum": 75096 }
+        ]
+    }
+}
