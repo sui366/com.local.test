@@ -4,7 +4,7 @@
   <classpathentry kind="src" path="src/main/java"/>
   <classpathentry kind="src" path="src/main/resources" excluding="**/*.java|**/*.java"/>
   <classpathentry kind="output" path="target/classes"/>
-  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_79"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.12/junit-4.12.jar" sourcepath="M2_REPO/junit/junit/4.12/junit-4.12-sources.jar">
     <attributes>
       <attribute value="jar:file:/D:/java/jarReposity/junit/junit/4.12/junit-4.12-javadoc.jar!/" name="javadoc_location"/>
@@ -31,170 +31,113 @@
       <attribute value="jar:file:/D:/java/jarReposity/org/springframework/spring-tx/4.2.6.RELEASE/spring-tx-4.2.6.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/data/spring-data-commons/1.12.2.RELEASE/spring-data-commons-1.12.2.RELEASE-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/springframework/data/spring-data-commons/1.11.2.RELEASE/spring-data-commons-1.11.2.RELEASE.jar" sourcepath="M2_REPO/org/springframework/data/spring-data-commons/1.11.2.RELEASE/spring-data-commons-1.11.2.RELEASE-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/springframework/data/spring-data-commons/1.11.2.RELEASE/spring-data-commons-1.11.2.RELEASE-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13.jar" sourcepath="M2_REPO/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/slf4j/slf4j-api/1.7.13/slf4j-api-1.7.13-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13.jar" sourcepath="M2_REPO/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/D:/java/jarReposity/org/slf4j/jcl-over-slf4j/1.7.13/jcl-over-slf4j-1.7.13-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/commons-lang/commons-lang/2.6/commons-lang-2.6.jar"/>
-  <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.9.4/joda-time-2.9.4.jar" sourcepath="M2_REPO/joda-time/joda-time/2.9.4/joda-time-2.9.4-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/joda-time/joda-time/2.8.2/joda-time-2.8.2.jar" sourcepath="M2_REPO/joda-time/joda-time/2.8.2/joda-time-2.8.2-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/joda-time/joda-time/2.9.4/joda-time-2.9.4-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/joda-time/joda-time/2.8.2/joda-time-2.8.2-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/elasticsearch/elasticsearch/2.2.0/elasticsearch-2.2.0.jar" sourcepath="M2_REPO/org/elasticsearch/elasticsearch/2.2.0/elasticsearch-2.2.0-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/5.4.1/lucene-core-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-core/5.4.1/lucene-core-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/elasticsearch/elasticsearch/1.5.2/elasticsearch-1.5.2.jar" sourcepath="M2_REPO/org/elasticsearch/elasticsearch/1.5.2/elasticsearch-1.5.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-core/5.4.1/lucene-core-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-core/4.10.4/lucene-core-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-backward-codecs/5.4.1/lucene-backward-codecs-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-backward-codecs/5.4.1/lucene-backward-codecs-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-backward-codecs/5.4.1/lucene-backward-codecs-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-analyzers-common/4.10.4/lucene-analyzers-common-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-analyzers-common/5.4.1/lucene-analyzers-common-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-analyzers-common/5.4.1/lucene-analyzers-common-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-analyzers-common/5.4.1/lucene-analyzers-common-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-queries/4.10.4/lucene-queries-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queries/5.4.1/lucene-queries-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-queries/5.4.1/lucene-queries-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-queries/5.4.1/lucene-queries-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-memory/4.10.4/lucene-memory-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-memory/5.4.1/lucene-memory-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-memory/5.4.1/lucene-memory-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-memory/5.4.1/lucene-memory-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-highlighter/4.10.4/lucene-highlighter-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-highlighter/5.4.1/lucene-highlighter-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-highlighter/5.4.1/lucene-highlighter-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-highlighter/5.4.1/lucene-highlighter-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-queryparser/4.10.4/lucene-queryparser-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-join/5.4.1/lucene-join-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-join/5.4.1/lucene-join-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-join/5.4.1/lucene-join-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-sandbox/4.10.4/lucene-sandbox-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-queryparser/5.4.1/lucene-queryparser-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-queryparser/5.4.1/lucene-queryparser-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-queryparser/5.4.1/lucene-queryparser-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-suggest/4.10.4/lucene-suggest-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-sandbox/5.4.1/lucene-sandbox-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-sandbox/5.4.1/lucene-sandbox-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-sandbox/5.4.1/lucene-sandbox-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-misc/4.10.4/lucene-misc-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-suggest/5.4.1/lucene-suggest-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-suggest/5.4.1/lucene-suggest-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-suggest/5.4.1/lucene-suggest-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-join/4.10.4/lucene-join-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-misc/5.4.1/lucene-misc-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-misc/5.4.1/lucene-misc-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-misc/5.4.1/lucene-misc-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-grouping/4.10.4/lucene-grouping-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-grouping/5.4.1/lucene-grouping-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-grouping/5.4.1/lucene-grouping-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-grouping/5.4.1/lucene-grouping-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-spatial/4.10.4/lucene-spatial-4.10.4-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-spatial/5.4.1/lucene-spatial-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-spatial/5.4.1/lucene-spatial-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1.jar" sourcepath="M2_REPO/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-spatial/5.4.1/lucene-spatial-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/com/spatial4j/spatial4j/0.4.1/spatial4j-0.4.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/apache/lucene/lucene-spatial3d/5.4.1/lucene-spatial3d-5.4.1.jar" sourcepath="M2_REPO/org/apache/lucene/lucene-spatial3d/5.4.1/lucene-spatial3d-5.4.1-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5.jar" sourcepath="M2_REPO/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/apache/lucene/lucene-spatial3d/5.4.1/lucene-spatial3d-5.4.1-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/antlr/antlr-runtime/3.5/antlr-runtime-3.5-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/spatial4j/spatial4j/0.5/spatial4j-0.5.jar" sourcepath="M2_REPO/com/spatial4j/spatial4j/0.5/spatial4j-0.5-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm/4.1/asm-4.1.jar" sourcepath="M2_REPO/org/ow2/asm/asm/4.1/asm-4.1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/spatial4j/spatial4j/0.5/spatial4j-0.5-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/ow2/asm/asm/4.1/asm-4.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/google/guava/guava/18.0/guava-18.0.jar" sourcepath="M2_REPO/com/google/guava/guava/18.0/guava-18.0-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/org/ow2/asm/asm-commons/4.1/asm-commons-4.1.jar" sourcepath="M2_REPO/org/ow2/asm/asm-commons/4.1/asm-commons-4.1-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/google/guava/guava/18.0/guava-18.0-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/org/ow2/asm/asm-commons/4.1/asm-commons-4.1-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/elasticsearch/securesm/1.0/securesm-1.0.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/carrotsearch/hppc/0.7.1/hppc-0.7.1.jar" sourcepath="M2_REPO/com/carrotsearch/hppc/0.7.1/hppc-0.7.1-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/joda/joda-convert/1.2/joda-convert-1.2.jar" sourcepath="M2_REPO/org/joda/joda-convert/1.2/joda-convert-1.2-sources.jar">
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.5/jackson-core-2.6.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.5/jackson-databind-2.6.5-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5-sources.jar">
     <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/joda/joda-convert/1.2/joda-convert-1.2-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/core/jackson-core/2.6.6/jackson-core-2.6.6-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.6.2/jackson-dataformat-smile-2.6.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.6.2/jackson-dataformat-smile-2.6.2-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/dataformat/jackson-dataformat-smile/2.6.2/jackson-dataformat-smile-2.6.2-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.6.2/jackson-dataformat-yaml-2.6.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.6.2/jackson-dataformat-yaml-2.6.2-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/dataformat/jackson-dataformat-yaml/2.6.2/jackson-dataformat-yaml-2.6.2-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/yaml/snakeyaml/1.15/snakeyaml-1.15.jar" sourcepath="M2_REPO/org/yaml/snakeyaml/1.15/snakeyaml-1.15-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/yaml/snakeyaml/1.15/snakeyaml-1.15-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.2/jackson-dataformat-cbor-2.6.2.jar" sourcepath="M2_REPO/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.2/jackson-dataformat-cbor-2.6.2-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/dataformat/jackson-dataformat-cbor/2.6.2/jackson-dataformat-cbor-2.6.2-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/io/netty/netty/3.10.5.Final/netty-3.10.5.Final.jar" sourcepath="M2_REPO/io/netty/netty/3.10.5.Final/netty-3.10.5.Final-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/io/netty/netty/3.10.5.Final/netty-3.10.5.Final-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2.jar" sourcepath="M2_REPO/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/ning/compress-lzf/1.0.2/compress-lzf-1.0.2-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/tdunning/t-digest/3.0/t-digest-3.0.jar" sourcepath="M2_REPO/com/tdunning/t-digest/3.0/t-digest-3.0-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/tdunning/t-digest/3.0/t-digest-3.0-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/org/hdrhistogram/HdrHistogram/2.1.6/HdrHistogram-2.1.6.jar" sourcepath="M2_REPO/org/hdrhistogram/HdrHistogram/2.1.6/HdrHistogram-2.1.6-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/org/hdrhistogram/HdrHistogram/2.1.6/HdrHistogram-2.1.6-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1.jar" sourcepath="M2_REPO/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/commons-cli/commons-cli/1.3.1/commons-cli-1.3.1-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/twitter/jsr166e/1.1.0/jsr166e-1.1.0.jar" sourcepath="M2_REPO/com/twitter/jsr166e/1.1.0/jsr166e-1.1.0-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/twitter/jsr166e/1.1.0/jsr166e-1.1.0-javadoc.jar!/" name="javadoc_location"/>
-    </attributes>
-  </classpathentry>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-databind/2.6.6/jackson-databind-2.6.6-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0.jar" sourcepath="M2_REPO/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0-sources.jar">
-    <attributes>
-      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/core/jackson-annotations/2.6.0/jackson-annotations-2.6.0-javadoc.jar!/" name="javadoc_location"/>
+      <attribute value="jar:file:/D:/java/jarReposity/com/fasterxml/jackson/core/jackson-annotations/2.6.5/jackson-annotations-2.6.5-javadoc.jar!/" name="javadoc_location"/>
     </attributes>
   </classpathentry>
   <classpathentry kind="var" path="M2_REPO/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE.jar" sourcepath="M2_REPO/org/springframework/spring-test/4.2.6.RELEASE/spring-test-4.2.6.RELEASE-sources.jar">

@@ -23,7 +23,7 @@ public class WebLogAspect {
 
     private Logger logger = Logger.getLogger(getClass());
 
-    ThreadLocal<Long> startTime = new ThreadLocal<>();
+    ThreadLocal<Long> startTime = new ThreadLocal<Long>();
 
     @Pointcut("execution(public * com.local.test.web..*.*(..))")
     public void webLog(){}
@@ -34,14 +34,17 @@ public class WebLogAspect {
 
         // 接收到请求，记录请求内容
         ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
-
-        // 记录下请求内容
-        logger.info("URL : " + request.getRequestURL().toString());
-        logger.info("HTTP_METHOD : " + request.getMethod());
-        logger.info("IP : " + request.getRemoteAddr());
-        logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        if(null != attributes){
+        	
+        	HttpServletRequest request = attributes.getRequest();
+        	
+        	// 记录下请求内容
+        	logger.info("URL : " + request.getRequestURL().toString());
+        	logger.info("HTTP_METHOD : " + request.getMethod());
+        	logger.info("IP : " + request.getRemoteAddr());
+        	logger.info("CLASS_METHOD : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        	logger.info("ARGS : " + Arrays.toString(joinPoint.getArgs()));
+        }
 
     }
 

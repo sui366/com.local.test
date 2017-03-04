@@ -10,7 +10,8 @@ public class HelloController {
 
     @RequestMapping("/hello")
     @ResponseBody
-    public String hello() {
+    public String hello() throws Exception {
+//    	throw new Exception("test");
         return "Hello World";
     }
 

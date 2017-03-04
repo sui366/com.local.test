@@ -1,0 +1,86 @@
+2017-01-10 11:03:25,995  INFO WebLogAspect:54 ---- RESPONSE : null
+2017-01-10 11:03:26,000  INFO WebLogAspect:55 ---- SPEND TIME : 7
+2017-01-10 11:03:39,248  INFO WebLogAspect:42 ---- URL : http://localhost:8080/
+2017-01-10 11:03:39,257  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:03:39,268  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:03:39,270  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.index
+2017-01-10 11:03:39,271  INFO WebLogAspect:46 ---- ARGS : [{}]
+2017-01-10 11:03:39,279  INFO WebLogAspect:54 ---- RESPONSE : index
+2017-01-10 11:03:39,280  INFO WebLogAspect:55 ---- SPEND TIME : 32
+2017-01-10 11:03:39,481  INFO WebLogAspect:42 ---- URL : http://localhost:8080/
+2017-01-10 11:03:39,482  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:03:39,483  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:03:39,483  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.index
+2017-01-10 11:03:39,484  INFO WebLogAspect:46 ---- ARGS : [{}]
+2017-01-10 11:03:39,484  INFO WebLogAspect:54 ---- RESPONSE : index
+2017-01-10 11:03:39,485  INFO WebLogAspect:55 ---- SPEND TIME : 4
+2017-01-10 11:03:48,325  INFO WebLogAspect:42 ---- URL : http://localhost:8080/
+2017-01-10 11:03:48,325  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:03:48,326  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:03:48,326  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.index
+2017-01-10 11:03:48,326  INFO WebLogAspect:46 ---- ARGS : [{}]
+2017-01-10 11:03:48,326  INFO WebLogAspect:54 ---- RESPONSE : index
+2017-01-10 11:03:48,327  INFO WebLogAspect:55 ---- SPEND TIME : 2
+2017-01-10 11:03:55,819  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:03:55,820  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:03:55,820  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:03:55,833  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:03:55,834  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:03:55,834  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:03:55,834  INFO WebLogAspect:55 ---- SPEND TIME : 15
+2017-01-10 11:04:17,560  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:17,560  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:17,561  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:17,561  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:17,562  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:17,562  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:17,563  INFO WebLogAspect:55 ---- SPEND TIME : 3
+2017-01-10 11:04:23,950  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:23,951  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:23,951  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:23,952  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:23,952  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:23,953  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:23,953  INFO WebLogAspect:55 ---- SPEND TIME : 3
+2017-01-10 11:04:25,372  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:25,377  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:25,380  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:25,381  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:25,383  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:25,384  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:25,384  INFO WebLogAspect:55 ---- SPEND TIME : 12
+2017-01-10 11:04:25,835  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:25,835  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:25,836  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:25,836  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:25,837  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:25,837  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:25,838  INFO WebLogAspect:55 ---- SPEND TIME : 3
+2017-01-10 11:04:26,048  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:26,048  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:26,049  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:26,049  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:26,049  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:26,050  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:26,050  INFO WebLogAspect:55 ---- SPEND TIME : 2
+2017-01-10 11:04:26,215  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:26,216  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:26,217  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:26,219  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:26,219  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:26,221  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:26,222  INFO WebLogAspect:55 ---- SPEND TIME : 7
+2017-01-10 11:04:26,362  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:26,364  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:26,365  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:26,365  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:26,366  INFO WebLogAspect:46 ---- ARGS : []
+2017-01-10 11:04:26,366  INFO WebLogAspect:54 ---- RESPONSE : Hello World
+2017-01-10 11:04:26,367  INFO WebLogAspect:55 ---- SPEND TIME : 5
+2017-01-10 11:04:42,265  INFO WebLogAspect:54 ---- RESPONSE : null
+2017-01-10 11:04:42,268  INFO WebLogAspect:55 ---- SPEND TIME : 5
+2017-01-10 11:04:54,974  INFO WebLogAspect:42 ---- URL : http://localhost:8080/hello
+2017-01-10 11:04:54,975  INFO WebLogAspect:43 ---- HTTP_METHOD : GET
+2017-01-10 11:04:54,976  INFO WebLogAspect:44 ---- IP : 0:0:0:0:0:0:0:1
+2017-01-10 11:04:54,978  INFO WebLogAspect:45 ---- CLASS_METHOD : com.local.test.web.HelloController.hello
+2017-01-10 11:04:54,979  INFO WebLogAspect:46 ---- ARGS : []
