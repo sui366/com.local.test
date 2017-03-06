@@ -24,11 +24,19 @@ public class PcGameTypeProcessor implements PageProcessor{
     public void process(Page page) { 
     	
     	Html html = page.getHtml();
-    	List<String> all = html.xpath("//div[@class='Mid0nav']/a").all();
-    	for(String type:all){
+    	List<String> secondLevel = html.xpath("//div[@class='Mid0nav']/a").all();
+    	for(String type:secondLevel){
     		String vote = new Html(type).xpath("//a//span/tidyText()").toString();//二级 菜单
+    		
+//    		System.out.println(vote);
     	}
     	
+    	List<String> threeLevel = html.xpath("//div[@class='like2']").all();
+    	for(String type:threeLevel){
+    		System.out.println("******************** begin *****************************");
+    		System.out.println(type);
+    		System.out.println("******************** end   *****************************");
+    	}
     	
     }
 
