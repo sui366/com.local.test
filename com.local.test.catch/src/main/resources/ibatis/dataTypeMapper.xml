@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.local.test.catch.dao.DataTypeDao" >
+  <resultMap id="BaseResultMap" type="com.local.test.catch.pojo.vo.DataTypeVo" >
+	<id column="id" property="id" jdbcType="INTEGER" />
+	<result column="source_type" property="sourceType" jdbcType="INTEGER" />
+	<result column="one_level" property="oneLevel" jdbcType="BIGINT" />
+	<result column="two_level" property="twoLevel" jdbcType="BIGINT" />
+	<result column="two_level_url" property="twoLevelUrl" jdbcType="VARCHAR" />
+	<result column="three_level" property="threeLevel" jdbcType="BIGINT" />
+	<result column="three_level_url" property="threeLevelUrl" jdbcType="VARCHAR" />
+  </resultMap>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery">
+		select t.*
+		from data_type t
+		<include refid="conditionQuery.core" />
+		order by
+		<choose>
+			<when test="paramMap.orderCol!=null">
+				${paramMap.orderCol}
+			</when>
+			<otherwise>
+				t.id
+			</otherwise>
+		</choose>
+		
+		<if test="paramMap.rp > 0">
+			limit #{paramMap.firstResult} , #{paramMap.rp}
+		</if>
+  </select>
+  <select id="queryCnt"
+		parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery"
+		resultType="java.lang.Integer">
+		select count(*) from data_type t
+		<include refid="conditionQuery.core" />
+  </select>
+  <delete id="delete" parameterType="java.lang.Integer" >
+    delete from data_type
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="save" parameterType="com.local.test.catch.pojo.po.DataType">
+	  	<selectKey resultType="int" keyProperty="id" >  
+			select LAST_INSERT_ID() as value  
+		</selectKey>  
+    insert into data_type (
+		source_type,
+		one_level,
+		two_level,
+		two_level_url,
+		three_level,
+		three_level_url
+	)
+    values (
+		#{sourceType,jdbcType=INTEGER},
+		#{oneLevel,jdbcType=BIGINT},
+		#{twoLevel,jdbcType=BIGINT},
+		#{twoLevelUrl,jdbcType=VARCHAR},
+		#{threeLevel,jdbcType=BIGINT},
+		#{threeLevelUrl,jdbcType=VARCHAR}
+    )
+  </insert>
+  <update id="update" parameterType="com.local.test.catch.pojo.po.DataType" >
+    update data_type
+    set 
+		source_type = #{sourceType,jdbcType=INTEGER},
+		one_level = #{oneLevel,jdbcType=BIGINT},
+		two_level = #{twoLevel,jdbcType=BIGINT},
+		two_level_url = #{twoLevelUrl,jdbcType=VARCHAR},
+		three_level = #{threeLevel,jdbcType=BIGINT},
+		three_level_url = #{threeLevelUrl,jdbcType=VARCHAR}
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+		source_type,
+		one_level,
+		two_level,
+		two_level_url,
+		three_level,
+		three_level_url
+    from data_type
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </select>
+</mapper>

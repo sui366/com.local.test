@@ -1,6 +1,8 @@
 package com.test.httpClient;
 
 import java.util.Map;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpResponse;
@@ -9,12 +11,16 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+import org.jsoup.nodes.Element;
 import org.junit.Test;
 
 import com.google.common.collect.Maps;
 import com.google.gson.Gson;
+
 /**
- * @Description: TODO  模拟抓取游牧星空的新闻数据
+ * @Description: TODO 模拟抓取游牧星空的新闻数据
  */
 public class GamerskyData {
 
@@ -59,8 +65,10 @@ public class GamerskyData {
 		sBuffer.append("callback=jQuery" + RandomStringUtils.randomNumeric(21) + "_" + RandomStringUtils.randomNumeric(13) + "&jsondata=");
 		sBuffer.append(org.apache.catalina.util.URLEncoder.DEFAULT.encode(new Gson().toJson(map)));
 		sBuffer.append("&_=" + sysTimeStr);
-
-		System.out.println("分页数据:" + httpGet(sBuffer.toString()));
+		String html = httpGet(sBuffer.toString());
+		Document doc = Jsoup.parseBodyFragment(html);  
+		Element body = doc.body();  
+		System.out.println("分页数据:" + html);
 
 	}
 
@@ -86,7 +94,18 @@ public class GamerskyData {
 		sBuffer.append(org.apache.catalina.util.URLEncoder.DEFAULT.encode(new Gson().toJson(map)));
 		sBuffer.append("&_=" + sysTimeStr);
 
-		System.out.println("分页主体数据:" + httpGet(sBuffer.toString()));
+		String data = httpGet(sBuffer.toString());
+		data = data.replaceAll("\\s", "");
+//		data.
+		data = data.substring(30000, data.length());
+		System.out.println(data);
+//		String data = "<a href=\"http://www.gamersky.com/news/201703/874592.shtml\" target=\"_blank\" title=\"尼尔机械纪元日本销量登顶 超级机器人大战V第二\"><img src=\"http://img1.gamersky.com/image2017/03/20170301_cks_170_24/gamersky_01origin_01_2017312120FAF.jpg\" alt=\"尼尔机械纪元日本销量登顶 超级机器人大战V第二\"  width=\"200\" height=\"110\" class=\"pe_u_thumb\" border=\"0\"></a>>target=\"_blank\" title=\"尼尔机械纪元日本销量登顶 超级机器人大战V第二\"><img src=\"http://img1.gamersky.com/image2017/03/20170301_cks_170_24/gamersky_01origin_01_2017312120FAF.jpg\"";
+		Pattern p = Pattern.compile("title=\"[\\S|(?![<|>])]+\\s*[\\S|(?![<|>])]+\">");
+		Matcher m = p.matcher(data);
+		while (m.find()) {
+			System.out.println(m.group());
+		}
+		// System.out.println("分页主体数据:" + httpGet(sBuffer.toString()));
 
 	}
 

@@ -6,15 +6,16 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.junit.Test;
+
+import com.alibaba.fastjson.JSONObject;
+import com.google.common.collect.Maps;
+import com.google.gson.Gson;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
 import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
-
-import com.alibaba.fastjson.JSONObject;
-import com.google.common.collect.Maps;
-import com.google.gson.Gson;
 
 public class GithubRepoPageProcessor implements PageProcessor {
 
@@ -23,7 +24,7 @@ public class GithubRepoPageProcessor implements PageProcessor {
 
     // process是定制爬虫逻辑的核心接口，在这里编写抽取逻辑
     @Override
-    public void process(Page page) {
+    public void process(Page page) { 
     	
 //    	Json json = page.getJson();
 
@@ -61,10 +62,13 @@ public class GithubRepoPageProcessor implements PageProcessor {
     public Site getSite() {
         return site;
     }
-
-    public static void main(String[] args) {
-    	
-    	String sysTimeStr = String.valueOf(System.currentTimeMillis());
+    
+    /**
+	 * 获取分页
+	 */
+	@Test
+	public void getlabelpage() {
+		String sysTimeStr = String.valueOf(System.currentTimeMillis());
 		Map<String, String> map = Maps.newHashMap();
 		map.put("type", "getlabelpage");
 		map.put("currentPage", "2");
@@ -77,15 +81,65 @@ public class GithubRepoPageProcessor implements PageProcessor {
 		sBuffer.append("callback=jQuery" + RandomStringUtils.randomNumeric(21) + "_" + RandomStringUtils.randomNumeric(13) + "&jsondata=");
 		sBuffer.append(org.apache.catalina.util.URLEncoder.DEFAULT.encode(new Gson().toJson(map)));
 		sBuffer.append("&_=" + sysTimeStr);
+		
+		Spider.create(new GithubRepoPageProcessor())
+	      .addUrl(sBuffer.toString())
+	      //开启5个线程抓取
+	      .thread(1)
+	      //启动爬虫
+	      .run();
 
+	}
 
-        Spider.create(new GithubRepoPageProcessor())
-                //从"https://github.com/code4craft"开始抓
-                .addUrl(sBuffer.toString())
-                //开启5个线程抓取
-                .thread(1)
-                //启动爬虫
-                .run();
-    }
+	/**
+	 * 获取主体数据 (img src：200*112.jpg图片地址 title：标题 txt：简介 time：发布时间/)
+	 */
+	@Test
+	public void updatenodelabel() {
+		String sysTimeStr = String.valueOf(System.currentTimeMillis());
+		Map<String, String> map = Maps.newHashMap();
+		map.put("type", "updatenodelabel");
+		map.put("isCache", "true");
+		map.put("cacheTime", "60");
+		map.put("nodeId", "11007");
+		map.put("isNodeId", "true");
+		map.put("page", "4");// 获取第几页的数据
+
+		StringBuffer sBuffer = new StringBuffer();
+		sBuffer.append("http://db2.gamersky.com/LabelJsonpAjax.aspx?");
+		sBuffer.append("callback=jQuery" + RandomStringUtils.randomNumeric(21) + "_" + RandomStringUtils.randomNumeric(13) + "&jsondata=");
+		sBuffer.append(org.apache.catalina.util.URLEncoder.DEFAULT.encode(new Gson().toJson(map)));
+		sBuffer.append("&_=" + sysTimeStr);
+		
+		Spider.create(new GithubRepoPageProcessor())
+	      .addUrl(sBuffer.toString())
+	      //开启5个线程抓取
+	      .thread(1)
+	      //启动爬虫
+	      .run();
+
+	}
+
+	/**
+	 * 评论数
+	 */
+	@Test
+	public void count() {
+		String sysTimeStr = String.valueOf(System.currentTimeMillis());
+
+		StringBuffer sBuffer = new StringBuffer();
+		sBuffer.append("http://cm.gamersky.com/commentapi/count?");
+		sBuffer.append("callback=jQuery" + RandomStringUtils.randomNumeric(21) + "_" + RandomStringUtils.randomNumeric(13) + "&jsondata=");
+		sBuffer.append("&_=" + sysTimeStr);
+
+		Spider.create(new GithubRepoPageProcessor())
+	      .addUrl(sBuffer.toString())
+	      //开启5个线程抓取
+	      .thread(1)
+	      //启动爬虫
+	      .run();
+
+	}
+
 
 }
