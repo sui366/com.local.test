@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="pragma" content="no-cache">
+	 <meta http-equiv="cache-control" content="no-cache">
+	 <meta http-equiv="expires" content="0">  
+    <title>网维大师产品动态</title>
+    <link rel="stylesheet" href="$!{localUrl}/src/css/index.css">
+    <script src="$!{localUrl}src/js/libs/jquery-2.1.4.min.js"></script>
+</head>
+
+<body>
+   <input type="hidden" id="localUrl" value="$!{localUrl}">
+   <input type="hidden" id="authPath" value="$!{oauth2Url}">
+   <input type="hidden" id="currentUserName" value="$!{currentUserName}">
+   
+    <div class="page-spinner-bar hide">
+        <div class="bounce1"></div>
+        <div class="bounce2"></div>
+        <div class="bounce3"></div>
+    </div>
+    <div id="body_container" class="product-info" style="display: none;">
+	    <!-- 标题 -->
+		<div class="top-container">
+			<h1 class="title">网维大师产品动态</h1>
+			<span class="time-now"></span>
+		</div>
+	<div class="slide">
+		
+		<!--终端运行动态-->
+	<section id="client_on" class="slide client-on">
+			<div class="container">
+				<!-- 左侧内容 -->
+				<div class="left-container">
+					<div class="client-count">
+						蓝屏终端数：<span class="bcNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-left">
+							<div class="client-title">在线网吧数</div>
+							<div class="client-info ocBarNum"></div>
+						</div>
+						<div class="client-right">
+							<div class="client-title">在线网吧占比</div>
+							<div class="client-info ocBarPct"></div>
+						</div>
+					</div>
+
+					<!-- 近12小时终端蓝屏率趋势 -->
+					<div class="blue-trend trend-box">
+						<div class="trend-title">近12小时终端蓝屏率趋势</div>
+						<div class="client-and-blue" id="blue_bar_12h"></div>
+					</div>
+					<!-- 网吧在线趋势 -->
+					<div class="bar-trend trend-box">
+						<div class="trend-title">网吧在线趋势</div>
+						<div class="client-and-blue" id="bar_online"></div>
+					</div>
+				</div>
+				<!-- 中间内容 -->
+				<div class="center-container">
+					<div class="center-title">
+						<div class="all-online">全国网维在线终端</div>
+						<div class="all-online-count ocNum"></div>
+						<!-- class="all-online-count" 上下箭头 添加all-online-down/up 类 -->
+						<div class="all-online-yestoday">
+							昨日同期&nbsp; <span class="ocNumYesterday"></span>
+						</div>
+					</div>
+					<!-- 终端运行地图 -->
+					<div class="client-online-map" id="client_map" style="position: relative; left: -85px; top: -65px;"></div>
+				</div>
+				<!-- 右侧内容 -->
+				<div class="right-container">
+					<div class="client-count">
+						崩溃终端数：<span class="ccNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-left">
+							<div class="client-title">终端平均启动次数</div>
+							<div class="client-info ocPerNum"></div>
+						</div>
+						<div class="client-right">
+							<div class="client-title">在线终端占比</div>
+							<div class="client-info ocPerPct"></div>
+						</div>
+					</div>
+					<!-- 近12小时客户端崩溃率趋势 -->
+					<div class="crash-trend trend-box">
+						<div class="trend-title">近12小时客户端崩溃率趋势</div>
+						<div class="client-and-blue" id="client_crash_12h"></div>
+					</div>
+					<!-- 终端在线趋势 -->
+					<div class="client-trend trend-box">
+						<div class="trend-title">终端在线趋势</div>
+						<div class="client-and-blue" id="client_online"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+			<!--蓝屏动态-->
+		<section id="blue_screen" class="slide blue-bar">
+			<div class="container">
+				<!-- 左侧内容 -->
+				<div class="left-container">
+					<div class="client-count">
+						在线终端数：<span class="ocNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-left">
+							<div class="client-title">蓝屏网吧数</div>
+							<div class="client-info bcBarNum"></div>
+						</div>
+						<div class="client-right">
+							<div class="client-title">网吧蓝屏率</div>
+							<div class="client-info bcBarPct"></div>
+						</div>
+					</div>
+
+					<!-- 蓝屏网吧尾号分布情况 -->
+					<div class="blue-trend trend-box">
+						<div class="trend-title">蓝屏网吧尾号分布情况</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="blue_bar_code"></div>
+					</div>
+					<!-- 蓝屏终端尾号分布情况 -->
+					<div class="bar-trend trend-box">
+						<div class="trend-title">蓝屏终端尾号分布情况</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="blue_pc_code"></div>
+					</div>
+				</div>
+				<!-- 中间内容 -->
+				<div class="center-container">
+					<div class="center-title">
+						<div class="all-online">近12小时蓝屏终端数</div>
+						<div class="all-online-count bcNum"></div>
+						<!-- class="all-online-count" 上下箭头 添加all-online-down/up 类 -->
+						<div class="all-online-yestoday">
+							昨日同期&nbsp; <span class="bcNumYesterday"></span>
+						</div>
+					</div>
+					<!-- 蓝屏终端数地图 -->
+					<div class="blue-pc-map" id="blue_pc_map" style="position: relative; left: -32px; top: -150px;"></div>
+					<!-- 近10次补丁升级记录 -->
+					<div class="patch-update">
+						<div class="patch-title">近10次补丁升级记录</div>
+						<div class="patch-left">
+							<table>
+								<thead>
+									<tr>
+										<td width="25%">时间</td>
+										<td width="13%">通道</td>
+										<td width="23%">城市</td>
+										<td width="19%">网吧尾号</td>
+										<td>终端尾号</td>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+						<div class="patch-right">
+							<table>
+								<thead>
+									<tr>
+										<td width="25%">时间</td>
+										<td width="13%">通道</td>
+										<td width="23%">城市</td>
+										<td width="19%">网吧尾号</td>
+										<td>终端尾号</td>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧内容 -->
+				<div class="right-container">
+					<div class="client-count">
+						崩溃终端数：<span class="ccNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-right">
+							<div class="client-title">蓝屏终端平均次数</div>
+							<div class="client-info bcPerNum"></div>
+						</div>
+						<div class="client-left">
+							<div class="client-title">终端蓝屏率</div>
+							<div class="client-info bcPerPct"></div>
+						</div>
+						
+					</div>
+					<!-- 蓝屏地区TOP5（每万终端） -->
+					<div class="crash-trend trend-box">
+						<div class="trend-title">蓝屏地区TOP5（每万终端）</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="blue_top5"></div>
+					</div>
+					<!-- 客户端蓝屏代码TOP10 -->
+					<div class="client-trend trend-box">
+						<div class="trend-title">客户端蓝屏代码TOP10</div>
+						<div class="client-and-blue" id="blue_top10"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<!--客户端崩溃动态-->
+		<section id="clinet_crash" class="slide blue-bar">
+			<div class="container">
+				<!-- 左侧内容 -->
+				<div class="left-container">
+					<div class="client-count">
+						蓝屏终端数：<span class="bcNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-left">
+							<div class="client-title">崩溃网吧数</div>
+							<div class="client-info ccBarNum"></div>
+						</div>
+						<div class="client-right">
+							<div class="client-title">崩溃网吧占比</div>
+							<div class="client-info ccBarPct"></div>
+						</div>
+					</div>
+
+					<!-- 崩溃网吧尾号分布情况 -->
+					<div class="blue-trend trend-box">
+						<div class="trend-title">崩溃网吧尾号分布情况</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="crash_bar_code"></div>
+					</div>
+					<!-- 崩溃终端尾号分布情况 -->
+					<div class="bar-trend trend-box">
+						<div class="trend-title">崩溃终端尾号分布情况</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="crash_pc_code"></div>
+					</div>
+				</div>
+				<!-- 中间内容 -->
+				<div class="center-container">
+					<div class="center-title">
+						<div class="all-online">近12小时崩溃终端数</div>
+						<div class="all-online-count pc-crash ccNum"></div>
+						<!-- class="all-online-count" 上下箭头 添加all-online-down/up 类 -->
+						<div class="all-online-yestoday">
+							昨日同期&nbsp; <span class="ccNumYesterday"></span>
+						</div>
+					</div>
+					<!-- 崩溃终端数地图 -->
+					<div class="blue-pc-map" id="crash_pc_map" style="position: relative; left: -32px; top: -150px;"></div>
+					<!-- 近10次补丁升级记录 -->
+					<div class="patch-update">
+						<div class="patch-title">近10次补丁升级记录</div>
+						<div class="patch-left">
+							<table>
+								<thead>
+									<tr>
+										<td width="25%">时间</td>
+										<td width="13%">通道</td>
+										<td width="23%">城市</td>
+										<td width="19%">网吧尾号</td>
+										<td>终端尾号</td>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+						<div class="patch-right">
+							<table>
+								<thead>
+									<tr>
+										<td width="25%">时间</td>
+										<td width="13%">通道</td>
+										<td width="23%">城市</td>
+										<td width="19%">网吧尾号</td>
+										<td>终端尾号</td>
+									</tr>
+								</thead>
+								<tbody>
+
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- 右侧内容 -->
+				<div class="right-container">
+					<div class="client-count">
+						在线终端数：<span class="ocNum"></span>
+					</div>
+					<div class="client-wrap">
+						<div class="client-left">
+							<div class="client-title">终端崩溃率</div>
+							<div class="client-info ccPerPct"></div>
+						</div>
+						<div class="client-right">
+							<div class="client-title">崩溃终端平均次数</div>
+							<div class="client-info ccPerNum"></div>
+						</div>
+						
+					</div>
+					<!-- 近12小时崩溃地区TOP5（每万终端） -->
+					<div class="crash-trend trend-box">
+						<div class="trend-title">近12小时崩溃地区TOP5（每万终端）</div>
+						<div class="trend-avg">平均值</div>
+						<div class="client-and-blue" id="crash_top5"></div>
+					</div>
+					<!-- 客户端崩溃代码TOP10 -->
+					<div class="client-trend trend-box">
+						<div class="trend-title">客户端崩溃代码TOP10</div>
+						<div class="client-and-blue" id="crash_top10"></div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		
+	
+
+	</div>
+	</div>
+	<script src="$!{localUrl}src/js/libs/jquery-2.1.4.min.js"></script>
+    <script src="$!{localUrl}src/js/libs/echarts-all-3.js"></script>
+    <script src="$!{localUrl}src/js/libs/echarts-wordcloud.min.js"></script>
+    <script src="$!{localUrl}src/js/libs/dataTool.min.js"></script>
+    <script src="$!{localUrl}src/js/libs/lodash.js"></script>
+    <script src="$!{localUrl}src/js/libs/switchable.js"></script>
+    <script src="$!{localUrl}src/js/libs/moment.js"></script>
+    <script src="$!{localUrl}src/js/libs/jquery-numerator.js"></script>
+    <script src="$!{localUrl}src/js/util.js"></script>
+    <script src="$!{localUrl}src/js/chart_base.js"></script>
+    <script src="$!{localUrl}src/js/pro_info_base.js"></script>
+    <script src="$!{localUrl}src/js/blueDynamic/all.js"></script>
+    <script src="$!{localUrl}src/js/clientOn/all.js"></script>
+    <script src="$!{localUrl}src/js/computerCrash/all.js"></script>
+    
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title>网维监控</title>
+    <script src="$!{localUrl}src/js/libs/jquery-2.1.4.min.js"></script>
+</head>
+<body>
+<input type="hidden" id="localUrl" value="$!{localUrl}">
+
+</body>
+</html>
+<script>
+		var localUrl = $("#localUrl").val();
+		var oauth2Url = $("#oauth2Url").val();
+    	top.location.href = localUrl +"home.shtml";
+</script>
