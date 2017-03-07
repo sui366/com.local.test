@@ -1,0 +1,17 @@
+com\local\test\web\filter\CacheContext.class
+com\local\test\service\MonitorObjectsService.class
+com\local\test\exception\MyException.class
+com\local\test\pojo\ErrorInfo.class
+com\local\test\exception\GlobalExceptionHandler.class
+com\local\test\pojo\MonitorObjects.class
+com\local\test\Application.class
+com\local\test\web\filter\OAuth2LoginCallback.class
+com\local\test\web\filter\PermissionValidateFilter.class
+com\local\test\dao\MonitorObjectsDao.class
+com\local\test\aspect\WebLogAspect.class
+com\local\test\scheduled\ScheduledTasks.class
+com\local\test\web\filter\ValidateFilter.class
+com\local\test\web\HelloController.class
+com\local\test\web\filter\UserUtil.class
+com\local\test\web\MonitorObjectsController.class
+com\local\test\dao\MonitorObjectsMapper.class

@@ -11,17 +11,18 @@ public class SpiderData extends BasePojo {
 	private static final long serialVersionUID = 1L;
 	
 	private String id;
-	private Integer sourceType;
+	private Integer taskId;
 	private String imgSrc;
 	private String title;
 	private String abstractContent;
 	private Date publishTime;
 	private Long cyCommentCount;
 	private Long visitCount;
-	private Long contentUrl;
+	private String contentUrl;
 	private String tag;
 	private String author;
 	private Integer starCount;
+	private Date addTime;
 
 	public String getId() {
 		return id;
@@ -30,12 +31,12 @@ public class SpiderData extends BasePojo {
 	public void setId(String id) {
 		this.id = id;
 	}
-	public Integer getSourceType() {
-		return sourceType;
+	public Integer getTaskId() {
+		return taskId;
 	}
 
-	public void setSourceType(Integer sourceType) {
-		this.sourceType = sourceType;
+	public void setTaskId(Integer taskId) {
+		this.taskId = taskId;
 	}
 	public String getImgSrc() {
 		return imgSrc;
@@ -79,11 +80,11 @@ public class SpiderData extends BasePojo {
 	public void setVisitCount(Long visitCount) {
 		this.visitCount = visitCount;
 	}
-	public Long getContentUrl() {
+	public String getContentUrl() {
 		return contentUrl;
 	}
 
-	public void setContentUrl(Long contentUrl) {
+	public void setContentUrl(String contentUrl) {
 		this.contentUrl = contentUrl;
 	}
 	public String getTag() {
@@ -107,12 +108,19 @@ public class SpiderData extends BasePojo {
 	public void setStarCount(Integer starCount) {
 		this.starCount = starCount;
 	}
+	public Date getAddTime() {
+		return addTime;
+	}
+
+	public void setAddTime(Date addTime) {
+		this.addTime = addTime;
+	}
 
 	@Override
 	public String toString() {
 		return "SpiderData "+ 
 				"[id=" + id +
-				", sourceType=" + sourceType + 
+				", taskId=" + taskId + 
 				", imgSrc=" + imgSrc + 
 				", title=" + title + 
 				", abstractContent=" + abstractContent + 
@@ -123,6 +131,7 @@ public class SpiderData extends BasePojo {
 				", tag=" + tag + 
 				", author=" + author + 
 				", starCount=" + starCount + 
+				", addTime=" + addTime + 
 		"]";
 	}
 

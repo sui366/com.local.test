@@ -7,7 +7,6 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.junit.Test;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.collect.Maps;
@@ -17,7 +16,6 @@ import com.local.test.reptile.util.DateUtil;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
-import us.codecraft.webmagic.Spider;
 import us.codecraft.webmagic.processor.PageProcessor;
 /**
  * @ClassName: GameSkyProcessor 
@@ -85,10 +83,9 @@ public class SwxfProcessor implements PageProcessor {
         return Site.me().setRetryTimes(3).setSleepTime(1000);
     }
 
-	@Test
-	public void start() {
-		Spider.create(new SwxfProcessor()).addUrl(url.toString()).run();
-
-	}
+//	public void start() {
+//		Spider.create(new SwxfProcessor()).addUrl(url.toString()).run();
+//
+//	}
 
 }

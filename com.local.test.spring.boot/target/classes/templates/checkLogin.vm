@@ -1,0 +1,8 @@
+
+<script>
+    var currentUserName = $("#currentUserName").val();
+    if(!isDataNull(currentUserName)){
+    	top.location.href = $("#auth_url").val();
+    }
+</script>
+

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.local.test.reptile.dao.SpiderTaskDao" >
+  <resultMap id="BaseResultMap" type="com.local.test.reptile.pojo.vo.SpiderTaskVo" >
+	<id column="id" property="id" jdbcType="INTEGER" />
+	<result column="platform_id" property="platformId" jdbcType="INTEGER" />
+	<result column="url" property="url" jdbcType="VARCHAR" />
+	<result column="task_name" property="taskName" jdbcType="VARCHAR" />
+	<result column="page_process_id" property="pageProcessId" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery">
+		select t.*
+		from spider_task t
+		<include refid="conditionQuery.core" />
+		order by
+		<choose>
+			<when test="paramMap.orderCol!=null">
+				${paramMap.orderCol}
+			</when>
+			<otherwise>
+				t.id
+			</otherwise>
+		</choose>
+		
+		<if test="paramMap.rp > 0">
+			limit #{paramMap.firstResult} , #{paramMap.rp}
+		</if>
+  </select>
+  <select id="queryCnt"
+		parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery"
+		resultType="java.lang.Integer">
+		select count(*) from spider_task t
+		<include refid="conditionQuery.core" />
+  </select>
+  <delete id="delete" parameterType="java.lang.Integer" >
+    delete from spider_task
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="save" parameterType="com.local.test.reptile.pojo.po.SpiderTask">
+	  	<selectKey resultType="int" keyProperty="id" >  
+			select LAST_INSERT_ID() as value  
+		</selectKey>  
+    insert into spider_task (
+		platform_id,
+		url,
+		task_name,
+		page_process_id
+	)
+    values (
+		#{platformId,jdbcType=INTEGER},
+		#{url,jdbcType=VARCHAR},
+		#{taskName,jdbcType=VARCHAR},
+		#{pageProcessId,jdbcType=INTEGER}
+    )
+  </insert>
+  <update id="update" parameterType="com.local.test.reptile.pojo.po.SpiderTask" >
+    update spider_task
+    set 
+		platform_id = #{platformId,jdbcType=INTEGER},
+		url = #{url,jdbcType=VARCHAR},
+		task_name = #{taskName,jdbcType=VARCHAR},
+		page_process_id = #{pageProcessId,jdbcType=INTEGER}
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+		platform_id,
+		url,
+		task_name,
+		page_process_id
+    from spider_task
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </select>
+</mapper>
