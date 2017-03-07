@@ -11,16 +11,10 @@ public class PropertiesUtil {
 	private String localUrl;
 	
 	
-	@Value("${ssn.data.url}")
-	private String ssnDataUrl;
 
 	public String getLocalUrl() {
 		return localUrl;
 	}
 
-	public String getSsnDataUrl() {
-		return ssnDataUrl;
-	}
-	
 	
 }

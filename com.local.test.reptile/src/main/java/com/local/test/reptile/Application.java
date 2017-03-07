@@ -1,4 +1,4 @@
-package com.local.test;
+package com.local.test.reptile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

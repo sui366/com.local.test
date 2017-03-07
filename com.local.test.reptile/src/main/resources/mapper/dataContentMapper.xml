@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.local.test.catch.dao.DataContentDao" >
-  <resultMap id="BaseResultMap" type="com.local.test.catch.pojo.vo.DataContentVo" >
+<mapper namespace="com.local.test.reptile.dao.DataContentDao" >
+  <resultMap id="BaseResultMap" type="com.local.test.reptile.pojo.vo.DataContentVo" >
 	<id column="id" property="id" jdbcType="VARCHAR" />
 	<result column="source_type" property="sourceType" jdbcType="INTEGER" />
 	<result column="function_type" property="functionType" jdbcType="INTEGER" />
@@ -45,7 +45,7 @@
     where 
 		id = #{id,jdbcType=VARCHAR}
   </delete>
-  <insert id="save" parameterType="com.local.test.catch.pojo.po.DataContent">
+  <insert id="save" parameterType="com.local.test.reptile.pojo.po.DataContent">
 	  	<selectKey resultType="int" keyProperty="id" >  
 			select LAST_INSERT_ID() as value  
 		</selectKey>  
@@ -78,7 +78,7 @@
 		#{starCount,jdbcType=INTEGER}
     )
   </insert>
-  <update id="update" parameterType="com.local.test.catch.pojo.po.DataContent" >
+  <update id="update" parameterType="com.local.test.reptile.pojo.po.DataContent" >
     update data_content
     set 
 		source_type = #{sourceType,jdbcType=INTEGER},
