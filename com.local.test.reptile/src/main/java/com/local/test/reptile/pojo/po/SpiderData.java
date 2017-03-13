@@ -12,6 +12,7 @@ public class SpiderData extends BasePojo {
 	
 	private String id;
 	private Integer taskId;
+	private Integer typeId;
 	private String imgSrc;
 	private String title;
 	private String abstractContent;
@@ -114,6 +115,14 @@ public class SpiderData extends BasePojo {
 
 	public void setAddTime(Date addTime) {
 		this.addTime = addTime;
+	}
+
+	public Integer getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
 	}
 
 	@Override

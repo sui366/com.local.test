@@ -9,7 +9,7 @@ package com.local.test.reptile.util.enums;
  */
 public enum PlatfromEnum {
 
-	GAME_SKY(1, "游牧星空"), BAIDU_BA(2, "新闻百度贴吧"), INTEREST_BA(3, "有意思吧");
+	GAME_SKY(1, "游牧星空"), BAIDU_BA(2, "百度贴吧"), ENJOY(3, "有意思吧");
 
 	private Integer id;
 	private String name;
@@ -35,13 +35,13 @@ public enum PlatfromEnum {
 		this.name = name;
 	}
 
-//	public static Integer getIdByKey(String key) {
-//		for (ItemEnum item : ItemEnum.values()) {
-//			if (item.getItemKey().equalsIgnoreCase(key)) {
-//				return item.getItemId();
-//			}
-//		}
-//		return null;
-//	}
+	public static String getNameById(Integer id) {
+		for (PlatfromEnum item : PlatfromEnum.values()) {
+			if (null != id && id.intValue() == item.getId().intValue()) {
+				return item.getName();
+			}
+		}
+		return "";
+	}
 
 }

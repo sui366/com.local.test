@@ -70,6 +70,7 @@
   </update>
   <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
+    	id,
 		platform_id,
 		level_name,
 		level_url,

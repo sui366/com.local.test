@@ -7,6 +7,8 @@
 	<result column="url" property="url" jdbcType="VARCHAR" />
 	<result column="task_name" property="taskName" jdbcType="VARCHAR" />
 	<result column="page_process_id" property="pageProcessId" jdbcType="INTEGER" />
+	<result column="status" property="status" jdbcType="INTEGER" />
+	<result column="type_id" property="typeId" jdbcType="INTEGER" />
   </resultMap>
   <select id="query" resultMap="BaseResultMap" parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery">
 		select t.*
@@ -45,13 +47,17 @@
 		platform_id,
 		url,
 		task_name,
-		page_process_id
+		page_process_id,
+		status,
+		type_id
 	)
     values (
 		#{platformId,jdbcType=INTEGER},
 		#{url,jdbcType=VARCHAR},
 		#{taskName,jdbcType=VARCHAR},
-		#{pageProcessId,jdbcType=INTEGER}
+		#{pageProcessId,jdbcType=INTEGER},
+		#{status,jdbcType=INTEGER},
+		#{typeId,jdbcType=INTEGER}
     )
   </insert>
   <update id="update" parameterType="com.local.test.reptile.pojo.po.SpiderTask" >
@@ -60,16 +66,21 @@
 		platform_id = #{platformId,jdbcType=INTEGER},
 		url = #{url,jdbcType=VARCHAR},
 		task_name = #{taskName,jdbcType=VARCHAR},
-		page_process_id = #{pageProcessId,jdbcType=INTEGER}
+		page_process_id = #{pageProcessId,jdbcType=INTEGER},
+		status = #{status,jdbcType=INTEGER},
+		type_id = #{typeId,jdbcType=INTEGER}
     where 
 		id = #{id,jdbcType=INTEGER}
   </update>
   <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
+    	id,
 		platform_id,
 		url,
 		task_name,
-		page_process_id
+		page_process_id,
+		status,
+		type_id
     from spider_task
     where 
 		id = #{id,jdbcType=INTEGER}

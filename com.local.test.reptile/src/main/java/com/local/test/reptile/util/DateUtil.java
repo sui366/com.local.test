@@ -17,6 +17,8 @@ public class DateUtil {
 	private static final int[] DAY_OF_MONTH = new int[] { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
 
 	public final static String FORMAT_1 = "yyyy-MM-dd HH:mm:ss";
+	public final static String FORMAT_2 = "HH:mm";
+	public final static String FORMAT_3 = "HH:mm:ss";
 	
 	public static Date getCurrentTime() {
 		return new Timestamp(System.currentTimeMillis());

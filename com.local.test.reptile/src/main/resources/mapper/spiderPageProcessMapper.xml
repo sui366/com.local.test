@@ -57,7 +57,8 @@
 		id = #{id,jdbcType=INTEGER}
   </update>
   <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
-    select 
+    select
+    	id, 
 		name,
 		process_class
     from spider_page_process

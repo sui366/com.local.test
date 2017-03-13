@@ -4,8 +4,11 @@ import java.util.List;
 
 import com.local.test.reptile.pojo.po.SpiderType;
 import com.local.test.reptile.pojo.qo.SpiderTypeQo;
+import com.local.test.reptile.service.SpiderDataService;
 import com.local.test.reptile.service.SpiderTypeService;
 import com.local.test.reptile.util.enums.LevelTypeEnum;
+import com.local.test.reptile.util.enums.PlatfromEnum;
+import com.local.test.reptile.webmagic.ParamsProcessor;
 
 import us.codecraft.webmagic.Page;
 import us.codecraft.webmagic.Site;
@@ -20,54 +23,43 @@ import us.codecraft.webmagic.selector.Html;
  * @date: 2017年3月6日 下午6:16:10
  */
 
-public class PcGameTypeProcessor implements PageProcessor{
+public class PcGameTypeProcessor extends ParamsProcessor implements PageProcessor{
 
-	private SpiderTypeService spiderTypeService;
 	
-	public PcGameTypeProcessor(SpiderTypeService spiderTypeService){
-		this.spiderTypeService = spiderTypeService;
+    public PcGameTypeProcessor(SpiderDataService spiderDataService, SpiderTypeService spiderTypeService, Integer taskId, Integer typeId) {
+		super(spiderDataService, spiderTypeService, taskId, typeId);
 	}
-	
-    @Override
+
+	@Override
     public void process(Page page) { 
     	
     	Html html = page.getHtml();
     	List<String> secondLevel = html.xpath("//div[@class='Mid0nav']/a").all();
     	List<String> threeLevel = html.xpath("//div[@class='Mid0cont']").all();
     	
-//    	for(String type:secondLevel){
-//    		String vote = new Html(type).xpath("//a//span/tidyText()").toString();//二级 菜单
-////    		System.out.println(vote);
-//    	}
-//    	
-//    	for(String type:threeLevel){
-//    		
-//    		List<String> all = new Html(type).xpath("//a").all();
-//    		for(String aStr:all){
-//    			String regex = "<a([\\S|\\s]+)href=\"([\\S|\\s]+)/\">([\\S|\\s]+)</a>";
-//    			
-//    			System.out.println(aStr.replaceAll(regex, "$3"));
-//    		}
-//    	}
+    	SpiderType entity = null;
+    	SpiderTypeQo queryPojo = new SpiderTypeQo();
+    	queryPojo.setPlatformId(PlatfromEnum.GAME_SKY.getId());
+    	queryPojo.setLevelType(LevelTypeEnum.GAME_SKAY_PC_GAME.getId());
+    	Integer parentId = getSpiderTypeService().findMenuId(queryPojo);
     	
+    	Integer threeParentId = null;
     	for(int i=0;i<secondLevel.size(); i++){
     		String vote = new Html(secondLevel.get(i)).xpath("//a//span/tidyText()").toString();//二级 菜单
     		
-    		SpiderTypeQo queryPojo = new SpiderTypeQo();
-    		
-    		SpiderType entity = null;
+    		queryPojo = new SpiderTypeQo();
     		queryPojo.setLevelName(vote.trim());
-    		queryPojo.setPlatformId(1);
-    		if(null == spiderTypeService.findMenuId(queryPojo)){
-    			entity = buildPo(vote, "", 1);
-    			spiderTypeService.save(entity);
+    		queryPojo.setParentLevelId(parentId);
+    		if(null == getSpiderTypeService().findMenuId(queryPojo)){
+    			entity = buildPo(vote, "", parentId);
+    			getSpiderTypeService().save(entity);
         		
-        		Integer parentId = spiderTypeService.findMenuId(queryPojo);
+    			threeParentId = getSpiderTypeService().findMenuId(queryPojo);
         		
-        		saveThreeLevel(threeLevel, i, parentId);
+        		saveThreeLevel(threeLevel, i, threeParentId);
     		}else{
-    			Integer parentId = spiderTypeService.findMenuId(queryPojo);
-    			saveThreeLevel(threeLevel, i, parentId);
+    			threeParentId = getSpiderTypeService().findMenuId(queryPojo);
+    			saveThreeLevel(threeLevel, i, threeParentId);
     		}
     	}
     	
@@ -79,13 +71,21 @@ public class PcGameTypeProcessor implements PageProcessor{
 		String threeObj = threeLevel.get(i);
 		List<String> all = new Html(threeObj).xpath("//a").all();
 		for(String aStr:all){
-			String regex = "<a([\\S|\\s]+)href=\"([\\S|\\s]+)\">([\\S|\\s]+)</a>";
+			String regex = "<a([\\S|\\s]+)>([\\S|\\s]+)([<i>|\\S|\\s|</i>]*)</a>";
+			
+			String url = new Html(aStr).xpath("//a/@href").toString();
+    		String name = aStr.replaceAll(regex, "$2");
+    		
 			queryPojo = new SpiderTypeQo();
-			queryPojo.setLevelName(aStr.replaceAll(regex, "$3"));
-			queryPojo.setPlatformId(1);
-			if(null == spiderTypeService.findMenuId(queryPojo)){
-				entity = buildPo(aStr.replaceAll(regex, "$3"), aStr.replaceAll(regex, "$2"), parentId);
-				spiderTypeService.save(entity);
+			queryPojo.setLevelName(name);
+			queryPojo.setParentLevelId(parentId);
+			if(null == getSpiderTypeService().findMenuId(queryPojo)){
+				entity = buildPo(name, url, parentId);
+				getSpiderTypeService().save(entity);
+				
+//				Integer gameId = spiderTypeService.findMenuId(queryPojo);
+//				Spider.create(new AnalyseGameUrlProcessor(spiderTypeService, gameId, name, PlatfromEnum.GAME_SKY.getId())).addUrl(url).run();
+
 			}
 		}
 	}
@@ -94,10 +94,10 @@ public class PcGameTypeProcessor implements PageProcessor{
 		SpiderType entity;
 		entity = new SpiderType();
 		entity.setLevelName(vote.trim());
-		entity.setLevelType(LevelTypeEnum.MENU.getId());
+		entity.setLevelType(LevelTypeEnum.GAME_SKAY_MENU.getId());
 		entity.setLevelUrl(levelUrl);
 		entity.setParentLevelId(parentLevelId);
-		entity.setPlatformId(1);
+		entity.setPlatformId(PlatfromEnum.GAME_SKY.getId());
 		return entity;
 	}
 

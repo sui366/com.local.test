@@ -9,8 +9,20 @@ package com.local.test.reptile.util.enums;
  */
 public enum LevelTypeEnum {
 
-	MENU(1, "菜单"), NEWS(2, "新闻"), STRATEGY(3, "攻略");
-
+	GAME_SKAY_MOBILE_GAME(1001, "游牧星空-手机游戏"),
+	GAME_SKAY_PC_GAME(1002, "游牧星空-单机游戏"),
+	GAME_SKAY_INTERNET_GAME(1003, "游牧星空-网络游戏"),
+	GAME_SKAY_MENU(1004, "游牧星空-菜单"), 
+	GAME_SKAY_NEWS(1005, "游牧星空-新闻"), 
+	GAME_SKAY_SKILL(1006, "游牧星空-攻略"), 
+	
+	BAIDU_HOT_RANK(2001,"百度热议榜"),
+	
+	ENJOY_MENU(3001, "有意思吧-菜单"), 
+	ENJOY_MONTH_RANK(3002, "有意思吧月度排行榜"), 
+	ENJOY_FORGE(3003, "有意思吧一些段子");
+	
+	
 	private Integer id;
 	private String name;
 
