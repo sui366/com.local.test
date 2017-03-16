@@ -24,6 +24,9 @@ public class SpiderData extends BasePojo {
 	private String author;
 	private Integer starCount;
 	private Date addTime;
+	private String content;
+	
+	
 
 	public String getId() {
 		return id;
@@ -123,6 +126,14 @@ public class SpiderData extends BasePojo {
 
 	public void setTypeId(Integer typeId) {
 		this.typeId = typeId;
+	}
+
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
 	}
 
 	@Override

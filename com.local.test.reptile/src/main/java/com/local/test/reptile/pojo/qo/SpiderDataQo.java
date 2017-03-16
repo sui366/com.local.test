@@ -7,6 +7,7 @@ import com.shunwang.business.framework.mybatis.annotion.SingleValue;
 public class SpiderDataQo extends PageQo {
 	private String id;
 	private Integer taskId;
+	private Integer typeId;
 	private String title;
 	private String titleLike;
 
@@ -47,6 +48,15 @@ public class SpiderDataQo extends PageQo {
 
 	public void setTitleLike(String titleLike) {
 		this.titleLike = titleLike;
+	}
+
+	@SingleValue(column = "type_id", equal = "=")
+	public Integer getTypeId() {
+		return typeId;
+	}
+
+	public void setTypeId(Integer typeId) {
+		this.typeId = typeId;
 	}
 	
 	

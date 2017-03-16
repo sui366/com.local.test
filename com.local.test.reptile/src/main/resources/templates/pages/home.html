@@ -21,7 +21,7 @@
 <div class="Mid">
   <div class="Mid_L">
     <div class="MidLtit"><div class="Search">
-      <form class="Frm sos" action="http://soso.gamersky.com/cse/search" target="_blank">
+      <form class="Frm sos" action="#">
         <input type="hidden" name="s" value="3068275339727451251">
         <input id="searchInput" class="txt" type="text" name="q" value="">
         <input id="searchBtn" class="sub" type="button" value="搜索">
@@ -31,18 +31,7 @@
     <ul class="pic_txt contentpaging" data-nodeid="20894" data-isnodeid="true">
       
             
-          
-      <!-- 
-      <li>
-        <div class="img"><a href="http://ow.gamersky.com/201612/841857.shtml" target="_blank">
-            <img src="http://imgs.gamersky.com/pic/2016/20161201_ll_136_11.jpg" alt="《守望先锋》死神雕像国内售价1499元 比国外贵不少"  width="200" height="112" class="pe_u_thumb" border="0">
-          </a></div>
-        <div class="tit"><a href="http://ow.gamersky.com/201612/841857.shtml" target="_blank">《守望先锋》死神雕像国内售价1499元 比国外贵不少</a></div>
-        <div class="text">　　还记得几日前暴雪公布的《守望先锋》死神手办么？售价150美元（约合人民币1034元）的死神手办做工十分...</div>
-        <div class="time">2016-12-01 18:21:33</div>
-      </li>                           
-       -->
-      
+
 
       
       
@@ -54,14 +43,14 @@
     <div class="MidRtit"><div class="tit">月度排行榜</div><div class="more"></div></div>
     <ul class="Rtxt">
       #foreach($obj in $!result.data.monthRankList) 
-      <li class="li1"><div class="tit"><a href="$!obj.contentUrl" target="_blank">$!obj.title</a></div><div class="time">{$!obj.publishTimeStr2}</div></li>
+      <li class="li1"><div class="tit"><a href="http://192.168.29.9:8091/loadContent.shtml?id=$obj.id" target="_blank">$!obj.title</a></div><div class="time">{$!obj.publishTimeStr2}</div></li>
       #end
     </ul>
 
     <div class="MidRtit"><div class="tit">一些段子</div><div class="more"></div></div>
     <ul class="Rtxt">
       #foreach($obj in $!result.data.forgeList) 
-      <li class="li1"><div class="tit"><a href="$!obj.contentUrl" target="_blank">$!obj.title</a></div><div class="time">{$!obj.publishTimeStr2}</div></li>
+      <li class="li1"><div class="tit"><a href="http://192.168.29.9:8091/loadContent.shtml?id=$obj.id" target="_blank">$!obj.title</a></div><div class="time">{$!obj.publishTimeStr2}</div></li>
       #end
       
     </ul>
@@ -107,6 +96,9 @@ $(document).ready(function() {
 			url : "http://192.168.29.9:8091/spiderDataList.action?t="+new Date().getTime(),
 			data : {"titleLike":searchInput},
 			success : function(result) {
+				if(result.data.page.total==0){
+					window.open("https://www.baidu.com/s?wd="+searchInput);   
+				}
 				buildMainList(result.data.page.rows);
 				
 				$('#pageTool').html("");
@@ -139,9 +131,18 @@ function buildMainList(data){
 		
 		str.push("<li>");
 		str.push("<div class=\"img\"><a href=\""+obj.contentUrl+"\" target=\"_blank\">");
-		str.push("<img src=\""+obj.imgSrc+"\" alt=\""+obj.title+"\"  width=\"200\" height=\"112\" class=\"pe_u_thumb\" border=\"0\">");
+		if(obj.platformId == 2){
+			if( obj.imgSrc.indexOf(".jpg") == (obj.imgSrc.length-4)){
+				str.push("<img src=\""+obj.imgSrc+"\"");
+			}else{
+				str.push("<img src=\"http://c.hiphotos.baidu.com/forum/whfpf%3D84%2C88%2C40%3Bq%3D90/sign=3c0b7b4c4e10b912bf94a5bea5c0c437/21087bf40ad162d903c95eeb18dfa9ec8a13cd26.jpg\"");
+			}
+		}else{
+			str.push("<img src=\""+obj.imgSrc+"\"");
+		}
+		str.push(" alt=\""+obj.title+"\"  width=\"200\" height=\"112\" class=\"pe_u_thumb\" border=\"0\">");
 		str.push("</a></div>");
-		str.push("<div class=\"tit\"><a href=\""+obj.contentUrl+"\" target=\"_blank\">"+obj.title+"</a></div>");
+		str.push("<div class=\"tit\"><a href=\"http://192.168.29.9:8091/loadContent.shtml?id="+obj.id+"\" target=\"_blank\">"+obj.title+"</a></div>");
 		str.push("<div class=\"text\">"+obj.abstractContent+"</div>");
 		str.push("<div class=\"time\">标签&nbsp;|&nbsp;"+obj.platformName+"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+obj.publishTimeStr+"</div>");
 		str.push("</li>");

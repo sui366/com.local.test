@@ -17,10 +17,12 @@ public enum LevelTypeEnum {
 	GAME_SKAY_SKILL(1006, "游牧星空-攻略"), 
 	
 	BAIDU_HOT_RANK(2001,"百度热议榜"),
+	BAIDU_TIEBA_TYPE(2002,"百度贴吧-分类"),
 	
 	ENJOY_MENU(3001, "有意思吧-菜单"), 
 	ENJOY_MONTH_RANK(3002, "有意思吧月度排行榜"), 
-	ENJOY_FORGE(3003, "有意思吧一些段子");
+	ENJOY_FORGE(3003, "有意思吧一些段子"),
+	ENJOY_MAIN_LIST(3004, "有意思吧一首页列表");
 	
 	
 	private Integer id;

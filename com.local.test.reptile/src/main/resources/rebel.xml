@@ -2,13 +2,13 @@
 <application generated-by="eclipse" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.zeroturnaround.com" xsi:schemaLocation="http://www.zeroturnaround.com http://update.zeroturnaround.com/jrebel/rebel-2_1.xsd">
 
 	<classpath>
-		<dir name="D:/java/workspace/workspace2/com.shunwang.icafe.monitor/com.shunwang.icafe.monitor.web/target/classes">
+		<dir name="D:\java\workspace\workspace2\com.local.test\com.local.test.reptile/target/classes">
 		</dir>
 	</classpath>
 
 	<web>
 		<link target="/">
-			<dir name="D:/java/workspace/workspace2/com.shunwang.icafe.monitor/com.shunwang.icafe.monitor.web/src/main/webapp">
+			<dir name="D:\java\workspace\workspace2\com.local.test\com.local.test.reptile/src/main/webapp">
 			</dir>
 		</link>
 	</web>

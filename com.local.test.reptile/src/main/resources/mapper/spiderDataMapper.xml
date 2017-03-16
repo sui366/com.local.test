@@ -8,6 +8,7 @@
 	<result column="imgSrc" property="imgSrc" jdbcType="VARCHAR" />
 	<result column="title" property="title" jdbcType="VARCHAR" />
 	<result column="abstract_content" property="abstractContent" jdbcType="VARCHAR" />
+	<result column="content" property="content" jdbcType="VARCHAR" />
 	<result column="publish_time" property="publishTime" jdbcType="TIMESTAMP" />
 	<result column="cy_comment_count" property="cyCommentCount" jdbcType="BIGINT" />
 	<result column="visit_count" property="visitCount" jdbcType="BIGINT" />
@@ -23,10 +24,9 @@
   </resultMap>
   
   <select id="query" resultMap="resultMap2" parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery">
-		select t.*, t3.platform_id 
+		select t.*, t2.platform_id 
 		from spider_data t
-		left join spider_task t2 on t.task_id=t2.id
-		left join spider_type t3 on t2.type_id=t3.id
+		left join spider_type t2 on t.type_id=t2.id
 		<include refid="conditionQuery.core" />
 		order by
 		<choose>
@@ -34,7 +34,7 @@
 				${paramMap.orderCol}
 			</when>
 			<otherwise>
-				t.id
+				t.add_time desc
 			</otherwise>
 		</choose>
 		
@@ -61,6 +61,7 @@
 		imgSrc,
 		title,
 		abstract_content,
+		content,
 		publish_time,
 		cy_comment_count,
 		visit_count,
@@ -77,6 +78,7 @@
 		#{imgSrc,jdbcType=VARCHAR},
 		#{title,jdbcType=VARCHAR},
 		#{abstractContent,jdbcType=VARCHAR},
+		#{content,jdbcType=VARCHAR},
 		#{publishTime,jdbcType=TIMESTAMP},
 		#{cyCommentCount,jdbcType=BIGINT},
 		#{visitCount,jdbcType=BIGINT},
@@ -95,6 +97,7 @@
 		imgSrc = #{imgSrc,jdbcType=VARCHAR},
 		title = #{title,jdbcType=VARCHAR},
 		abstract_content = #{abstractContent,jdbcType=VARCHAR},
+		content = #{content,jdbcType=VARCHAR},
 		publish_time = #{publishTime,jdbcType=TIMESTAMP},
 		cy_comment_count = #{cyCommentCount,jdbcType=BIGINT},
 		visit_count = #{visitCount,jdbcType=BIGINT},
@@ -106,24 +109,26 @@
     where 
 		id = #{id,jdbcType=VARCHAR}
   </update>
-  <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+  <select id="get" resultMap="resultMap2" parameterType="java.lang.String" >
     select 
-    	id,
-		task_id,
-		type_id,
-		imgSrc,
-		title,
-		abstract_content,
-		publish_time,
-		cy_comment_count,
-		visit_count,
-		content_url,
-		tag,
-		author,
-		starCount,
-		add_time
-    from spider_data
+    	t.id,
+		t.task_id,
+		t.type_id,
+		t.imgSrc,
+		t.title,
+		t.abstract_content,
+		t.content,
+		t.publish_time,
+		t.cy_comment_count,
+		t.visit_count,
+		t.content_url,
+		t.tag,
+		t.author,
+		t.starCount,
+		t.add_time, 
+		t2.platform_id 
+    from spider_data t left join spider_type t2 on t.type_id=t2.id
     where 
-		id = #{id,jdbcType=VARCHAR}
+		t.id = #{id,jdbcType=VARCHAR}
   </select>
 </mapper>
