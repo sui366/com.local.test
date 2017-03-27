@@ -9,6 +9,7 @@ import java.util.List;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.config.RequestConfig;
 import org.apache.http.client.methods.CloseableHttpResponse;
@@ -20,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.google.common.net.HttpHeaders;
 import com.local.test.reptile.pojo.po.SpiderData;
 import com.local.test.reptile.pojo.qo.SpiderDataQo;
 import com.local.test.reptile.pojo.vo.SpiderDataVo;
@@ -37,12 +39,13 @@ import com.shunwang.business.framework.spring.mvc.controller.CrudController;
 public class SpiderDataController extends CrudController<SpiderData, SpiderDataService> {
 
 	@RequestMapping(value = { "/", "/index.shtml", "/home.shtml" })
-	public ModelAndView home(HttpServletRequest request) throws Exception {
+	public ModelAndView home(HttpServletRequest request, SpiderDataQo query) throws Exception {
 
 		Result result = new Result();
 
-		SpiderDataQo query = new SpiderDataQo();
 		query.setOrder("order by add_time desc");
+		
+		result.setValue("titleLike", query.getTitleLike());
 
 		List<Condition> conditions = new ArrayList<Condition>();
 		conditions.add(ConditionFactory.buildSqlCondition(String.format("task_id in (select task.id from spider_task task where task.type_id in (select type.id from spider_type type where type.platform_id=%s and type.level_type=%s))", PlatfromEnum.ENJOY.getId(), LevelTypeEnum.ENJOY_MONTH_RANK.getId())));
@@ -70,6 +73,11 @@ public class SpiderDataController extends CrudController<SpiderData, SpiderDataS
 		List<Condition> conditions = new ArrayList<Condition>();
 		conditions.add(ConditionFactory.buildSqlCondition(String.format("task_id in (select task.id from spider_task task where task.type_id in (select type.id from spider_type type where type.platform_id in (%s,%s,%s) and type.level_type not in(%s,%s)))", PlatfromEnum.GAME_SKY.getId(), PlatfromEnum.BAIDU_BA.getId(), PlatfromEnum.ENJOY.getId(), LevelTypeEnum.ENJOY_MONTH_RANK.getId(), LevelTypeEnum.ENJOY_FORGE.getId())));
 
+		if(StringUtils.isNotBlank(query.getTitleLike())){
+			conditions.add(ConditionFactory.buildSqlCondition(String.format("(t.title like '%s' or t.abstract_content like '%s')", "%"+query.getTitleLike()+"%", "%"+query.getTitleLike()+"%")));
+		}
+		
+		
 		if (null != pageSize) {
 			query.setLimit(pageSize);
 		}
@@ -102,6 +110,8 @@ public class SpiderDataController extends CrudController<SpiderData, SpiderDataS
 			return new ModelAndView("pages/gameSky-content").addObject("result", result);
 		} else if (vo.getPlatformId().intValue() == PlatfromEnum.ENJOY.getId().intValue()) {
 			return new ModelAndView("pages/enjoy-content").addObject("result", result);
+		} else if (vo.getPlatformId().intValue() == PlatfromEnum.BAIDU_BA.getId().intValue()) {
+			return new ModelAndView("pages/baidu-content").addObject("result", result);
 		} else {
 			return null;
 		}
@@ -117,7 +127,6 @@ public class SpiderDataController extends CrudController<SpiderData, SpiderDataS
 		// Create global request configuration
 		RequestConfig defaultRequestConfig = RequestConfig.custom().setSocketTimeout(120 * 1000).setConnectTimeout(120 * 1000).build();
 
-		// Create an HttpClient with the given custom dependencies and
 		// configuration.
 		CloseableHttpClient httpclient = HttpClients.custom().setUserAgent("Mozilla/5.0 Firefox/26.0").setMaxConnTotal(120).setMaxConnPerRoute(120).setDefaultRequestConfig(defaultRequestConfig).build();
 
@@ -128,16 +137,10 @@ public class SpiderDataController extends CrudController<SpiderData, SpiderDataS
 			httpget = new HttpGet("http://c.hiphotos.baidu.com/forum/whfpf%3D84%2C88%2C40%3Bq%3D90/sign=3c0b7b4c4e10b912bf94a5bea5c0c437/21087bf40ad162d903c95eeb18dfa9ec8a13cd26.jpg");
 		}
 		
+		if(imageUrl.startsWith("http")){
+			httpget.setHeader(HttpHeaders.REFERER, PlatfromEnum.BAIDU_BA.getUrl());
+		}
 
-//		String regex = "([\\S|\\s]+)(\\d+,\\d+)([\\S|\\s]*)";
-		// String regex = "([\\S|\\s]+)(whfpf=)([\\S|\\s]*)";
-		// if(!imageUrl.replaceAll(regex, "$2").isEmpty()){
-		// httpget = new HttpGet("http://c.hiphotos.baidu.com/forum/whfpf%3D84%2C88%2C40%3Bq%3D90/sign=3c0b7b4c4e10b912bf94a5bea5c0c437/21087bf40ad162d903c95eeb18dfa9ec8a13cd26.jpg");
-		// }
-
-		httpget.setHeader("Referer", PlatfromEnum.BAIDU_BA.getUrl());
-
-		System.out.println("executing request " + httpget.getURI());
 		CloseableHttpResponse httpResponse = httpclient.execute(httpget);
 
 		try {
@@ -149,7 +152,6 @@ public class SpiderDataController extends CrudController<SpiderData, SpiderDataS
 			if (entity != null) {
 				InputStream input = entity.getContent();
 				response.setContentType("image/*"); // 设置返回的文件类型
-				// response.setContentType("Content-type: image/jpeg"); //
 				// 设置返回的文件类型
 				OutputStream toClient = response.getOutputStream(); // 得到向客户端输出二进制数据的对象
 

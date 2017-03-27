@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.local.test.reptile.dao.SpiderTaskFullDao" >
+  <resultMap id="BaseResultMap" type="com.local.test.reptile.pojo.vo.SpiderTaskFullVo" >
+	<id column="id" property="id" jdbcType="INTEGER" />
+	<result column="url" property="url" jdbcType="VARCHAR" />
+	<result column="task_name" property="taskName" jdbcType="VARCHAR" />
+	<result column="page_process_id" property="pageProcessId" jdbcType="INTEGER" />
+	<result column="status" property="status" jdbcType="INTEGER" />
+	<result column="type_id" property="typeId" jdbcType="INTEGER" />
+	<result column="catch_type" property="catchType" jdbcType="INTEGER" />
+	<result column="start_page_num" property="startPageNum" jdbcType="INTEGER" />
+	<result column="end_page_num" property="endPageNum" jdbcType="INTEGER" />
+	<result column="node_id" property="nodeId" jdbcType="INTEGER" />
+  </resultMap>
+  <select id="query" resultMap="BaseResultMap" parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery">
+		select t.*
+		from spider_task_full t
+		<include refid="conditionQuery.core" />
+		order by
+		<choose>
+			<when test="paramMap.orderCol!=null">
+				${paramMap.orderCol}
+			</when>
+			<otherwise>
+				t.id
+			</otherwise>
+		</choose>
+		
+		<if test="paramMap.rp > 0">
+			limit #{paramMap.firstResult} , #{paramMap.rp}
+		</if>
+  </select>
+  <select id="queryCnt"
+		parameterType="com.shunwang.business.framework.mybatis.query.ConditionQuery"
+		resultType="java.lang.Integer">
+		select count(*) from spider_task_full t
+		<include refid="conditionQuery.core" />
+  </select>
+  <delete id="delete" parameterType="java.lang.Integer" >
+    delete from spider_task_full
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="save" parameterType="com.local.test.reptile.pojo.po.SpiderTaskFull">
+	  	<selectKey resultType="int" keyProperty="id" >  
+			select LAST_INSERT_ID() as value  
+		</selectKey>  
+    insert into spider_task_full (
+		url,
+		task_name,
+		page_process_id,
+		status,
+		type_id,
+		catch_type,
+		start_page_num,
+		end_page_num,
+		node_id
+	)
+    values (
+		#{url,jdbcType=VARCHAR},
+		#{taskName,jdbcType=VARCHAR},
+		#{pageProcessId,jdbcType=INTEGER},
+		#{status,jdbcType=INTEGER},
+		#{typeId,jdbcType=INTEGER},
+		#{catchType,jdbcType=INTEGER},
+		#{startPageNum,jdbcType=INTEGER},
+		#{endPageNum,jdbcType=INTEGER},
+		#{nodeId,jdbcType=INTEGER}
+    )
+  </insert>
+  <update id="update" parameterType="com.local.test.reptile.pojo.po.SpiderTaskFull" >
+    update spider_task_full
+    set 
+		url = #{url,jdbcType=VARCHAR},
+		task_name = #{taskName,jdbcType=VARCHAR},
+		page_process_id = #{pageProcessId,jdbcType=INTEGER},
+		status = #{status,jdbcType=INTEGER},
+		type_id = #{typeId,jdbcType=INTEGER},
+		catch_type = #{catchType,jdbcType=INTEGER},
+		start_page_num = #{startPageNum,jdbcType=INTEGER},
+		end_page_num = #{endPageNum,jdbcType=INTEGER},
+		node_id = #{nodeId,jdbcType=INTEGER}
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </update>
+  <select id="get" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    	id,
+		url,
+		task_name,
+		page_process_id,
+		status,
+		type_id,
+		catch_type,
+		start_page_num,
+		end_page_num,
+		node_id
+    from spider_task_full
+    where 
+		id = #{id,jdbcType=INTEGER}
+  </select>
+</mapper>

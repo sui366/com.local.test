@@ -53,28 +53,11 @@ public class CatchDataTask {
 	@Autowired
 	private SpiderTaskFullService spiderTaskFullService;
 
-	/**
-	 * 定时抓取 游牧星空 菜单
-	 */
-	@Scheduled(cron = "0 0/1 * * * ?")
-	public void pcGameTypeProcessorData() throws Exception {
-
-		// Spider.create(new
-		// PcGameTypeProcessor(spiderTypeService)).addUrl("http://www.gamersky.com/pcgame/").run();
-		//
-		// Spider.create(new
-		// InternetGameTypeProcessor(spiderTypeService)).addUrl("http://ol.gamersky.com/").run();
-		//
-		// Spider.create(new
-		// MobileTypeProcessor(spiderTypeService)).addUrl("http://shouyou.gamersky.com/").run();
-
-	}
 
 	/**
 	 * 游牧星空
 	 */
-	// @Scheduled(cron = "0 0/1 * * * ?")
-	@Scheduled(cron = "0/10 * * * * ?")
+	@Scheduled(cron = "0 0/30 * * * ?")
 	public void gameSkyData() throws Exception {
 
 		SpiderTaskQo spiderTaskQo = new SpiderTaskQo();
@@ -103,7 +86,7 @@ public class CatchDataTask {
 	/**
 	 * 游牧星空 - 全量
 	 */
-	@Scheduled(cron = "30 1 17 * * ?")
+	@Scheduled(cron = "30 27 8 * * ?")
 	public void gameSkyDataFull() throws Exception {
 		
 		SpiderTaskFullQo spiderTaskFullQo = new SpiderTaskFullQo();
@@ -128,7 +111,7 @@ public class CatchDataTask {
 			Integer startPageNum = task.getStartPageNum();
 			String url = "";
 			HashSet<String> urlSet = Sets.newHashSet();
-			for(int i=startPageNum; i>=endPageNum; i++){
+			for(int i=startPageNum; i<=endPageNum; i++){
 				url = buildUrl(task.getNodeId(), i, task.getUrl()).toString();
 				urlSet.add(url);
 			}

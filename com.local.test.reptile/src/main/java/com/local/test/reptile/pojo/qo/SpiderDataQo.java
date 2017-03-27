@@ -1,7 +1,5 @@
 package com.local.test.reptile.pojo.qo;
 
-import org.apache.commons.lang3.StringUtils;
-
 import com.shunwang.business.framework.mybatis.annotion.SingleValue;
 
 public class SpiderDataQo extends PageQo {
@@ -10,6 +8,7 @@ public class SpiderDataQo extends PageQo {
 	private Integer typeId;
 	private String title;
 	private String titleLike;
+	private String abstractContentLike;
 
 	@SingleValue(column = "id", equal = "=")
 	public String getId() {
@@ -38,11 +37,11 @@ public class SpiderDataQo extends PageQo {
 		this.title = title;
 	}
 
-	@SingleValue(column = "title", equal = "like")
+//	@SingleValue(column = "title", equal = "like")
 	public String getTitleLike() {
-		if(StringUtils.isNotBlank(titleLike)){
-			setTitleLike("%"+titleLike.trim()+"%");
-		}
+//		if(StringUtils.isNotBlank(titleLike)){
+//			setTitleLike("%"+titleLike.trim()+"%");
+//		}
 		return titleLike;
 	}
 
@@ -57,6 +56,18 @@ public class SpiderDataQo extends PageQo {
 
 	public void setTypeId(Integer typeId) {
 		this.typeId = typeId;
+	}
+
+//	@SingleValue(column = "abstract_content", equal = "like")
+	public String getAbstractContentLike() {
+//		if(StringUtils.isNotBlank(abstractContentLike)){
+//			setAbstractContentLike("%"+abstractContentLike.trim()+"%");
+//		}
+		return abstractContentLike;
+	}
+
+	public void setAbstractContentLike(String abstractContentLike) {
+		this.abstractContentLike = abstractContentLike;
 	}
 	
 	
